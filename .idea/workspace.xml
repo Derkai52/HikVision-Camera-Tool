@@ -185,7 +185,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -251,7 +251,7 @@
       <workItem from="1648100236299" duration="44000" />
       <workItem from="1648100302901" duration="23623000" />
       <workItem from="1648129607733" duration="678000" />
-      <workItem from="1648130308799" duration="19676000" />
+      <workItem from="1648130308799" duration="20125000" />
     </task>
     <servers />
   </component>
