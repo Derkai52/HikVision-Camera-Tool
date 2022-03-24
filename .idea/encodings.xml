@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/camera/hikvision/include/CameraParams.h" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/camera/hikvision/include/MvCameraControl.h" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/camera/hikvision/include/MvErrorDefine.h" charset="GB2312" />
+  </component>
+</project>

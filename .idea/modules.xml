@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Hikvision_Camera_Tool.iml" filepath="$PROJECT_DIR$/.idea/Hikvision_Camera_Tool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/predictor_kalman.iml" filepath="$PROJECT_DIR$/.idea/predictor_kalman.iml" />
+    </modules>
+  </component>
+</project>
