@@ -8,7 +8,7 @@ using namespace camera;
 
 int main() {
     Mat src;
-    Camera MVS_cap; // 初始化相机
+    HikCamera MVS_cap; // 初始化相机
     MVS_cap.CamInfoShow(); // 显示图像参数信息
     while (true) {
         MVS_cap.ReadImg(src); // 相机取图

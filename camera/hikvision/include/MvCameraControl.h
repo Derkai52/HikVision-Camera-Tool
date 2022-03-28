@@ -45,7 +45,7 @@ extern "C" {
 
 /************************************************************************/
 /* 相机的基本指令和操作                                         		*/
-/* Camera basic instructions and operations                             */
+/* HikCamera basic instructions and operations                             */
 /************************************************************************/
 /************************************************************************
  *  @fn     MV_CC_GetSDKVersion()
@@ -844,7 +844,7 @@ MV_CAMCTRL_API int __stdcall MV_CC_InvalidateNodes(IN void* handle);
  
  * @fn     MV_CAMCTRL_API int __stdcall MV_CC_GetWidth(IN void* handle, IN OUT MVCC_INTVALUE* pstValue);
  *  @brief  Get image width
- *  @param  void* handle                [IN]        Camera Handle
+ *  @param  void* handle                [IN]        HikCamera Handle
  *          MVCC_INTVALUE* pstValue     [IN][OUT]   Returns the information structure pointer about the camera's width for the caller
  *          The meaning of returns pstValue structure
  *                  unsigned int    nCurValue;      // Represents the current width value of the camera
@@ -866,7 +866,7 @@ MV_CAMCTRL_API int __stdcall MV_CC_GetWidth(IN void* handle, IN OUT MVCC_INTVALU
 
 * @fn     MV_CAMCTRL_API int __stdcall MV_CC_SetWidth(IN void* handle, IN const unsigned int nValue);
  *  @brief  Set image width
- *  @param  void* handle                [IN]        Camera Handle
+ *  @param  void* handle                [IN]        HikCamera Handle
  *          const unsigned int nValue   [IN]        To set the value of the camera width, note that the width value must be a multiple of nInc in the pstValue returned by the MV_CC_GetWidth interface
  *  @return Success, return MV_OK, and the camera width will change to the corresponding value. Failure, return error code
 ************************************************************************/
@@ -883,7 +883,7 @@ MV_CAMCTRL_API int __stdcall MV_CC_SetWidth(IN void* handle, IN const unsigned i
  
  *  @fn     MV_CAMCTRL_API int __stdcall MV_CC_GetHeight(IN void* handle, IN OUT MVCC_INTVALUE* pstValue);
  *  @brief  Get image height
- *  @param  void* handle                [IN]        Camera handle
+ *  @param  void* handle                [IN]        HikCamera handle
  *  @param  MVCC_INTVALUE* pstValue     [IN][OUT]   Return pointer of information structure related to camera height to user
  *  @return Success, return MV_OK, and return height information to the structure. Failure, return error code
  *  
@@ -900,8 +900,8 @@ MV_CAMCTRL_API int __stdcall MV_CC_GetHeight(IN void* handle, IN OUT MVCC_INTVAL
  
  *  @fn     MV_CAMCTRL_API int __stdcall MV_CC_SetHeight(IN void* handle, IN const unsigned int nValue);
  *  @brief  Set image height
- *  @param  void* handle                [IN]        Camera Handle
- *          const unsigned int nValue   [IN]        Camera height value to set, note that this value must be times of nInc of pstValue returned by MV_CC_GetWidth
+ *  @param  void* handle                [IN]        HikCamera Handle
+ *          const unsigned int nValue   [IN]        HikCamera height value to set, note that this value must be times of nInc of pstValue returned by MV_CC_GetWidth
  *  @return Success, return MV_OK, and the camera height will change to the corresponding value. Failure, return error code
  ************************************************************************/
 MV_CAMCTRL_API int __stdcall MV_CC_SetHeight(IN void* handle, IN const unsigned int nValue);
@@ -917,7 +917,7 @@ MV_CAMCTRL_API int __stdcall MV_CC_SetHeight(IN void* handle, IN const unsigned 
  
  *  @fn     MV_CAMCTRL_API int __stdcall MV_CC_GetAOIoffsetX(IN void* handle, IN OUT MVCC_INTVALUE* pstValue);
  *  @brief  Get image X offset
- *  @param  void* handle                [IN]        Camera Handle
+ *  @param  void* handle                [IN]        HikCamera Handle
  *  @param  MVCC_INTVALUE* pstValue     [IN][OUT]   Return pointer of information structure related to camera X offset to user
  *  @return Success, return MV_OK. Failure, return error code
  *  
@@ -934,8 +934,8 @@ MV_CAMCTRL_API int __stdcall MV_CC_GetAOIoffsetX(IN void* handle, IN OUT MVCC_IN
  
  *  @fn     MV_CAMCTRL_API int __stdcall MV_CC_SetAOIoffsetX(IN void* handle, IN const unsigned int nValue);
  *  @brief  Set image X offset
- *  @param  void* handle                [IN]        Camera Handle
- *          const unsigned int nValue   [IN]        Camera X offset value to set
+ *  @param  void* handle                [IN]        HikCamera Handle
+ *          const unsigned int nValue   [IN]        HikCamera X offset value to set
  *  @return Success, return MV_OK, and the camera X offset will change to the corresponding value. Failure, return error code
  ************************************************************************/
 MV_CAMCTRL_API int __stdcall MV_CC_SetAOIoffsetX(IN void* handle, IN const unsigned int nValue);
@@ -951,7 +951,7 @@ MV_CAMCTRL_API int __stdcall MV_CC_SetAOIoffsetX(IN void* handle, IN const unsig
  
  *  @fn     MV_CAMCTRL_API int __stdcall MV_CC_GetAOIoffsetY(IN void* handle, IN OUT MVCC_INTVALUE* pstValue);
  *  @brief  Get image Y offset
- *  @param  void* handle                [IN]        Camera Handle
+ *  @param  void* handle                [IN]        HikCamera Handle
  *  @param  MVCC_INTVALUE* pstValue     [IN][OUT]   Return pointer of information structure related to camera Y offset to user
  *  @return Success, return MV_OK. Failure, return error code
  *  
@@ -968,8 +968,8 @@ MV_CAMCTRL_API int __stdcall MV_CC_GetAOIoffsetY(IN void* handle, IN OUT MVCC_IN
  
  *  @fn     MV_CAMCTRL_API int __stdcall MV_CC_SetAOIoffsetY(IN void* handle, IN const unsigned int nValue);
  *  @brief  Set image Y offset
- *  @param  void* handle                [IN]        Camera Handle
- *          const unsigned int nValue   [IN]        Camera Y offset value to set
+ *  @param  void* handle                [IN]        HikCamera Handle
+ *          const unsigned int nValue   [IN]        HikCamera Y offset value to set
  *  @return Success, return MV_OK, and the camera Y offset will change to the corresponding value. Failure, return error code
  ************************************************************************/
 MV_CAMCTRL_API int __stdcall MV_CC_SetAOIoffsetY(IN void* handle, IN const unsigned int nValue);
@@ -985,7 +985,7 @@ MV_CAMCTRL_API int __stdcall MV_CC_SetAOIoffsetY(IN void* handle, IN const unsig
  
  *  @fn     MV_CAMCTRL_API int __stdcall MV_CC_GetAutoExposureTimeLower(IN void* handle, IN OUT MVCC_INTVALUE* pstValue);
  *  @brief  Get exposure lower limit
- *  @param  void* handle                [IN]        Camera Handle
+ *  @param  void* handle                [IN]        HikCamera Handle
  *  @param  MVCC_INTVALUE* pstValue     [IN][OUT]   Return pointer of information structure related to camera exposure lower to user
  *  @return Success, return MV_OK. Failure, return error code
  *  
@@ -1002,7 +1002,7 @@ MV_CAMCTRL_API int __stdcall MV_CC_GetAutoExposureTimeLower(IN void* handle, IN 
  
  *  @fn     MV_CAMCTRL_API int __stdcall MV_CC_SetAutoExposureTimeLower(IN void* handle, IN const unsigned int nValue);
  *  @brief  Set exposure lower limit
- *  @param  void* handle                [IN]        Camera Handle
+ *  @param  void* handle                [IN]        HikCamera Handle
  *          const unsigned int nValue   [IN]        Exposure lower to set
  *  @return Success, return MV_OK, and the camera exposure time lower limit value will change to the corresponding value. Failure, return error code
  ************************************************************************/
@@ -1019,7 +1019,7 @@ MV_CAMCTRL_API int __stdcall MV_CC_SetAutoExposureTimeLower(IN void* handle, IN 
  
  *  @fn     MV_CAMCTRL_API int __stdcall MV_CC_GetAutoExposureTimeUpper(IN void* handle, IN OUT MVCC_INTVALUE* pstValue);
  *  @brief  Get exposure upper limit
- *  @param  void* handle                [IN]        Camera Handle
+ *  @param  void* handle                [IN]        HikCamera Handle
  *  @param  MVCC_INTVALUE* pstValue     [IN][OUT]   Return pointer of information structure related to camera exposure upper to user
  *  @return Success, return MV_OK. Failure, return error code
  *  
@@ -1036,7 +1036,7 @@ MV_CAMCTRL_API int __stdcall MV_CC_GetAutoExposureTimeUpper(IN void* handle, IN 
  
  *  @fn     MV_CAMCTRL_API int __stdcall MV_CC_SetAutoExposureTimeUpper(IN void* handle, IN const unsigned int nValue);
  *  @brief  Set exposure upper limit
- *  @param  void* handle                [IN]        Camera Handle
+ *  @param  void* handle                [IN]        HikCamera Handle
  *          const unsigned int nValue   [IN]        Exposure upper to set
  *  @return Success, return MV_OK, and the camera exposure time upper limit value will change to the corresponding value. Failure, return error code
  ************************************************************************/
@@ -1053,7 +1053,7 @@ MV_CAMCTRL_API int __stdcall MV_CC_SetAutoExposureTimeUpper(IN void* handle, IN 
  
  *  @fn     MV_CAMCTRL_API int __stdcall MV_CC_GetBrightness(IN void* handle, IN OUT MVCC_INTVALUE* pstValue);
  *  @brief  Get brightness
- *  @param  void* handle                [IN]        Camera Handle
+ *  @param  void* handle                [IN]        HikCamera Handle
  *  @param  MVCC_INTVALUE* pstValue     [IN][OUT]   Return pointer of information structure related to camera brightness to user
  *  @return Success, return MV_OK. Failure, return error code
  *  
@@ -1070,7 +1070,7 @@ MV_CAMCTRL_API int __stdcall MV_CC_GetBrightness(IN void* handle, IN OUT MVCC_IN
  
  *  @fn     MV_CAMCTRL_API int __stdcall MV_CC_SetBrightness(IN void* handle, IN const unsigned int nValue);
  *  @brief  Set brightness
- *  @param  void* handle                [IN]        Camera Handle
+ *  @param  void* handle                [IN]        HikCamera Handle
  *          const unsigned int nValue   [IN]        Brightness upper to set
  *  @return Success, return MV_OK, and the camera brightness value will change to the corresponding value. Failure, return error code
  ************************************************************************/
@@ -1091,7 +1091,7 @@ MV_CAMCTRL_API int __stdcall MV_CC_SetBrightness(IN void* handle, IN const unsig
  
  * @fn     MV_CAMCTRL_API int __stdcall MV_CC_GetFrameRate(IN void* handle, IN OUT MVCC_FLOATVALUE* pstValue);
  *  @brief  Get Frame Rate
- *  @param  void* handle                [IN]        Camera Handle
+ *  @param  void* handle                [IN]        HikCamera Handle
  *          MVCC_FLOATVALUE* pstValue   [IN][OUT]   Return pointer of information structure related to camera frame rate to user
  *          The meaning of returns pstValue structure
  *                                      float           fCurValue;      // Indicates the current frame rate of the camera
@@ -1112,8 +1112,8 @@ MV_CAMCTRL_API int __stdcall MV_CC_GetFrameRate(IN void* handle, IN OUT MVCC_FLO
  
  * @fn     MV_CAMCTRL_API int __stdcall MV_CC_SetFrameRate(IN void* handle, IN const float fValue);
  *  @brief  Set frame rate
- *  @param  void* handle                [IN]        Camera Handle
- *          const float fValue          [IN]        Camera frame rate to set 
+ *  @param  void* handle                [IN]        HikCamera Handle
+ *          const float fValue          [IN]        HikCamera frame rate to set
  *  @return Success, return MV_OK, and camera frame rate will be changed to the corresponding value. Failure, return error code
  ************************************************************************/
 MV_CAMCTRL_API int __stdcall MV_CC_SetFrameRate(IN void* handle, IN const float fValue);
@@ -1133,10 +1133,10 @@ MV_CAMCTRL_API int __stdcall MV_CC_SetFrameRate(IN void* handle, IN const float 
  
  *  @fn     MV_CAMCTRL_API int __stdcall MV_CC_GetGain(IN void* handle, IN OUT MVCC_FLOATVALUE* pstValue);
  *  @brief  Get Gain
- *  @param  void* handle                [IN]        Camera Handle
+ *  @param  void* handle                [IN]        HikCamera Handle
  *          MVCC_FLOATVALUE* pstValue   [IN][OUT]   Return pointer of information structure related to gain to user
  *  @return Success, return MV_OK, and get the structure of the corresponding parameters. Failure, return error code
- *                                      float           fCurValue;      // Camera current gain
+ *                                      float           fCurValue;      // HikCamera current gain
  *                                      float           fMax;           // The maximum gain camera allowed
  *                                      float           fMin;           // The minimum gain camera allowed
  *  @return Success, return MV_OK, and get the structure of the corresponding parameters. Failure, return error code
@@ -1154,7 +1154,7 @@ MV_CAMCTRL_API int __stdcall MV_CC_GetGain(IN void* handle, IN OUT MVCC_FLOATVAL
  
  *  @fn     MV_CAMCTRL_API int __stdcall MV_CC_SetGain(IN void* handle, IN const float fValue);
  *  @brief  Set Gain
- *  @param  void* handle                [IN]        Camera Handle
+ *  @param  void* handle                [IN]        HikCamera Handle
  *          const float fValue          [IN]        Gain value to set
  *  @return Success, return MV_OK, and the camera gain value will change to the corresponding value. Failure, return error code
  ************************************************************************/
@@ -1175,10 +1175,10 @@ MV_CAMCTRL_API int __stdcall MV_CC_SetGain(IN void* handle, IN const float fValu
  
  *  @fn     MV_CAMCTRL_API int __stdcall MV_CC_GetExposureTime(IN void* handle, IN OUT MVCC_FLOATVALUE* pstValue);
  *  @brief  Get exposure time
- *  @param  void* handle                [IN]        Camera Handle
+ *  @param  void* handle                [IN]        HikCamera Handle
  *          MVCC_FLOATVALUE* pstValue   [IN][OUT]   Return pointer of information structure related to exposure time to user
  *  @return Success, return MV_OK, and get the structure of the corresponding parameters. Failure, return error code
- *                                      float           fCurValue;      // Camera current exposure time
+ *                                      float           fCurValue;      // HikCamera current exposure time
  *                                      float           fMax;           // The maximum exposure time camera allowed
  *                                      float           fMin;           // The minimum exposure time camera allowed
  *  @return Success, return MV_OK, and get the structure of the corresponding parameters. Failure, return error code
@@ -1196,7 +1196,7 @@ MV_CAMCTRL_API int __stdcall MV_CC_GetExposureTime(IN void* handle, IN OUT MVCC_
  
  *  @fn     MV_CAMCTRL_API int __stdcall MV_CC_SetExposureTime(IN void* handle, IN const float fValue);
  *  @brief  Set exposure time
- *  @param  void* handle                [IN]        Camera Handle
+ *  @param  void* handle                [IN]        HikCamera Handle
  *          const float fValue          [IN]        Exposure time to set
  *  @return Success, return MV_OK, and the camera exposure time value will change to the corresponding value. Failure, return error code
  ************************************************************************/
@@ -1217,7 +1217,7 @@ MV_CAMCTRL_API int __stdcall MV_CC_SetExposureTime(IN void* handle, IN const flo
  
  * @fn     MV_CAMCTRL_API int __stdcall MV_CC_GetPixelFormat(IN void* handle, IN OUT MVCC_ENUMVALUE* pstValue);
  *  @brief  Get Pixel Format
- *  @param  void* handle                [IN]        Camera Handle
+ *  @param  void* handle                [IN]        HikCamera Handle
  *          MVCC_ENUMVALUE* pstValue    [IN][OUT]   Returns the information structure pointer about pixel format for the caller
  *          The meaning of returns pstValue structure
  *          unsigned int    nCurValue;                              //  The current pixel format of the camera, is the enumeration type, such as PixelType_Gvsp_Mono8, here is the integer value, the specific value please refer to MvGvspPixelType enumeration type in PixelType.h
@@ -1240,7 +1240,7 @@ MV_CAMCTRL_API int __stdcall MV_CC_GetPixelFormat(IN void* handle, IN OUT MVCC_E
  
  * @fn     MV_CAMCTRL_API int __stdcall MV_CC_SetPixelFormat(IN void* handle, IN const unsigned int nValue);
  *  @brief  Set Pixel Format
- *  @param  void* handle                [IN]        Camera Handle
+ *  @param  void* handle                [IN]        HikCamera Handle
  *          const unsigned int nValue   [IN]        The corresponding integer value for pixel format to be set, when calling this interface can be directly filled in enumeration values, such as MV_CC_SetPixelFormat(m_handle, PixelType_Gvsp_RGB8_Packed);
  *  @return Success, return MV_OK, and the camera pixel format will change to the corresponding value. Failure, return error code
  *  
@@ -1957,7 +1957,7 @@ MV_CAMCTRL_API int __stdcall MV_CC_SetHeartBeatTimeout(IN void* handle, IN const
  *  @fn     MV_CAMCTRL_API int __stdcall MV_CC_LocalUpgrade(IN void* handle, 
                                                             const void *pFilePathName);
  *  @brief  Device Local Upgrade
- *  @param  void* handle                  [IN]        Camera handle
+ *  @param  void* handle                  [IN]        HikCamera handle
  *  @param  void *pFilePathName           [IN]        File name
  *  @return Success, return MV_OK. Failure, return error code
  ************************************************************************/
@@ -1974,7 +1974,7 @@ MV_CAMCTRL_API int __stdcall MV_CC_LocalUpgrade(IN void* handle, const void *pFi
  *  @fn     MV_CAMCTRL_API int __stdcall MV_CC_GetUpgradeProcess(IN void* handle,
                                                                  unsigned int* pnProcess);
  *  @brief  Get Upgrade Progress
- *  @param  void* handle                  [IN]        Camera handle
+ *  @param  void* handle                  [IN]        HikCamera handle
  *  @param  unsigned int* pnProcess       [OUT]       Progress receiving address
  *  @return Success, return MV_OK. Failure, return error code
  ************************************************************************/
@@ -1987,8 +1987,8 @@ MV_CAMCTRL_API int __stdcall MV_CC_GetUpgradeProcess(IN void* handle, unsigned i
  *  @return 最佳packetsize
  
  *  @fn     MV_CAMCTRL_API int __stdcall MV_CC_GetOptimalPacketSize(IN void* handle);
- *  @brief  Get the optimal Packet Size, Only support GigE Camera
- *  @param  void* handle                  [IN]        Camera handle
+ *  @brief  Get the optimal Packet Size, Only support GigE HikCamera
+ *  @param  void* handle                  [IN]        HikCamera handle
  *  @return Optimal packetsize
  ************************************************************************/
 MV_CAMCTRL_API int __stdcall MV_CC_GetOptimalPacketSize(IN void* handle);
@@ -2007,8 +2007,8 @@ MV_CAMCTRL_API int __stdcall MV_CC_GetOptimalPacketSize(IN void* handle);
  *  @brief  Read Memory
  *  @param  handle: Device Handle
  *  @param  pBuffer: Used as a return value, save the read-in memory value ( Memory value is stored in accordance with the big end model)
- *  @param  nAddress: Memory address to be read, which can be obtained from the Camera.xml file of the device, the form xml node value of xxx_RegAddr
-                     (Camera.xml file of device is automatically generated in the application's current directory after the device is opened)
+ *  @param  nAddress: Memory address to be read, which can be obtained from the HikCamera.xml file of the device, the form xml node value of xxx_RegAddr
+                     (HikCamera.xml file of device is automatically generated in the application's current directory after the device is opened)
  *  @param  nLength: Length of the memory to be read
  *  @return Refer to the return error code
 *************************************************************************/
@@ -2028,8 +2028,8 @@ MV_CAMCTRL_API int __stdcall MV_CC_ReadMemory(IN void* handle , void *pBuffer, i
  *  @brief  Write Memory
  *  @param  handle: Device Handle
  *  @param  pBuffer: Memory value to be written ( Note the memory value to be stored in accordance with the big end model)
- *  @param  nAddress: Memory address to be written, which can be obtained from the Camera.xml file of the device, the form xml node value of xxx_RegAddr
-                     (Camera.xml file of device is automatically generated in the application's current directory after the device is opened)
+ *  @param  nAddress: Memory address to be written, which can be obtained from the HikCamera.xml file of the device, the form xml node value of xxx_RegAddr
+                     (HikCamera.xml file of device is automatically generated in the application's current directory after the device is opened)
  *  @param  nLength: Length of the memory to be written
  *  @return Refer to the return error code
 ************************************************************************/

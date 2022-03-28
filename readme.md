@@ -1,4 +1,4 @@
-# HikRobot-Camera-Tool
+# HikRobot-HikCamera-Tool
 
 #### 通过封装常用相机操作，让你的工业相机开箱即用！
 本示例适用于MV系列工业相机产品

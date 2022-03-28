@@ -57,7 +57,7 @@
 #define MV_E_UPG_FILE_MISMATCH     0x80000400 ///< 升级固件不匹配 | en:Firmware mismatches
 #define MV_E_UPG_LANGUSGE_MISMATCH 0x80000401 ///< 升级固件语言不匹配 | en:Firmware language mismatches
 #define MV_E_UPG_CONFLICT          0x80000402 ///< 升级冲突（设备已经在升级了再次请求升级即返回此错误） | en:Upgrading conflicted (repeated upgrading requests during device upgrade)
-#define MV_E_UPG_INNER_ERR         0x80000403 ///< 升级时相机内部出现错误 | en:Camera internal error during upgrade
+#define MV_E_UPG_INNER_ERR         0x80000403 ///< 升级时相机内部出现错误 | en:HikCamera internal error during upgrade
 #define MV_E_UPG_UNKNOW            0x800004FF ///< 升级时未知错误 | en:Unknown error during upgrade
 
 

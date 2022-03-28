@@ -18,13 +18,14 @@
       <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kf/autoaim.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kf/autoaim.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kf/camera-param.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kf/predictor/PredictorKalman.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kf/predictor/PredictorKalman.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kf/predictor/kalman.h" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../数据可视化/test1/test1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera/hikvision/include/MvCameraControl.h" beforeDir="false" afterPath="$PROJECT_DIR$/camera/hikvision/include/MvCameraControl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera/hikvision/include/MvErrorDefine.h" beforeDir="false" afterPath="$PROJECT_DIR$/camera/hikvision/include/MvErrorDefine.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera/hikvision/include/hikvision_camera.h" beforeDir="false" afterPath="$PROJECT_DIR$/camera/hikvision/include/hikvision_camera.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/CMakeLists.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/LICENSE" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/README.md" beforeDir="false" />
@@ -224,9 +225,9 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="run" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="hikvision_camera_tool" TARGET_NAME="run" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="hikvision_camera_tool" RUN_TARGET_NAME="run">
@@ -251,7 +252,8 @@
       <workItem from="1648100236299" duration="44000" />
       <workItem from="1648100302901" duration="23623000" />
       <workItem from="1648129607733" duration="678000" />
-      <workItem from="1648130308799" duration="20759000" />
+      <workItem from="1648130308799" duration="21453000" />
+      <workItem from="1648428199360" duration="6408000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1648174399072</created>
@@ -260,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648174399072</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update">
+      <created>1648174465974</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1648174465974</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
