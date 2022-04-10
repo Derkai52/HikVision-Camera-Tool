@@ -1,0 +1,3 @@
+/home/tk/Desktop/Hikvision_Camera_Tool/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/tk/Desktop/Hikvision_Camera_Tool/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/tk/Desktop/Hikvision_Camera_Tool/cmake-build-debug/CMakeFiles/run.dir

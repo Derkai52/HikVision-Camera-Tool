@@ -42,6 +42,7 @@ namespace camera
     class HikCamera
     {
     public:
+
         HikCamera();
         ~HikCamera();
 
@@ -57,9 +58,14 @@ namespace camera
         bool reset();
         //********** 读相机的原始图像 **************/
         void ReadImg(cv::Mat &image);
+        //********** 对相机调参并实时查看效果 *******/
+        void DebugCam(void *p_handle, cv::Mat &image);
+
+
 
     private:
         void *handle; // 相机操作句柄
+
         pthread_t nThreadID;
 
         //********** 海康相机参数表(同上) **************/
@@ -88,6 +94,8 @@ namespace camera
         int TriggerMode;
         int TriggerSource;
         int LineSelector;
+
+
     };
 
 } // namespace camera
