@@ -47,7 +47,7 @@ namespace camera
         ~HikCamera();
 
         //********** 相机工作线程 ******************/
-        static void *HKWorkThread(void *p_handle);
+        static void *HKWorkThread(void *arg);
         //********** 输出设备信息 ******************/
         bool PrintDeviceInfo(MV_CC_DEVICE_INFO *pstMVDevInfo);
         //********** 输出相机参数信息 **************/
@@ -59,7 +59,7 @@ namespace camera
         //********** 读相机的原始图像 **************/
         void ReadImg(cv::Mat &image);
         //********** 对相机调参并实时查看效果 *******/
-        void DebugCam(void *p_handle, cv::Mat &image);
+        static void DebugCam(void *p_handle, MV_CC_DEVICE_INFO *pDeviceInfo);
 
 
 

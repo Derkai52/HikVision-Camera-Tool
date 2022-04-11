@@ -46,7 +46,7 @@
 				<Compiler>
 					<Add option="-DHIK_CONFIG_FILE_PATH=&quot;/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/config&quot;"/>
 					<Add directory="/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/include"/>
-					<Add directory="/usr/local/include/yaml-cpp"/>
+					<Add directory="/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/tool/include"/>
 					<Add directory="/usr/local/include/opencv4"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
@@ -73,7 +73,7 @@
 				<Compiler>
 					<Add option="-DHIK_CONFIG_FILE_PATH=&quot;/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/config&quot;"/>
 					<Add directory="/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/include"/>
-					<Add directory="/usr/local/include/yaml-cpp"/>
+					<Add directory="/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/tool/include"/>
 					<Add directory="/usr/local/include/opencv4"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
@@ -92,49 +92,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/include/CameraParams.h">
-			<Option target="run"/>
-		</Unit>
-		<Unit filename="/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/include/MvCameraControl.h">
-			<Option target="run"/>
-		</Unit>
-		<Unit filename="/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/include/MvDeviceBase.h">
-			<Option target="run"/>
-		</Unit>
-		<Unit filename="/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/include/MvErrorDefine.h">
-			<Option target="run"/>
-		</Unit>
-		<Unit filename="/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/include/MvGigEDevice.h">
-			<Option target="run"/>
-		</Unit>
-		<Unit filename="/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/include/MvInclude.h">
-			<Option target="run"/>
-		</Unit>
-		<Unit filename="/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/include/MvUsb3VDevice.h">
-			<Option target="run"/>
-		</Unit>
-		<Unit filename="/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/include/PixelType.h">
-			<Option target="run"/>
-		</Unit>
-		<Unit filename="/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/include/TlFactory.h">
-			<Option target="run"/>
-		</Unit>
-		<Unit filename="/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/include/hikvision_camera.h">
-			<Option target="run"/>
-		</Unit>
 		<Unit filename="/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/src/hikvision_camera.cpp">
 			<Option target="run"/>
 		</Unit>
-		<Unit filename="/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/tool/calibration/calibrations.cpp">
+		<Unit filename="/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/tool/src/calibration/calibrations.cpp">
 			<Option target="run"/>
 		</Unit>
-		<Unit filename="/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/tool/calibration/calibrations.h">
-			<Option target="run"/>
-		</Unit>
-		<Unit filename="/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/tool/debug/camera_parms_debug.cpp">
-			<Option target="run"/>
-		</Unit>
-		<Unit filename="/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/tool/debug/camera_parms_debug.h">
+		<Unit filename="/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/tool/src/debug/camera_parms_debug.cpp">
 			<Option target="run"/>
 		</Unit>
 		<Unit filename="/home/tk/Desktop/Hikvision_Camera_Tool/main.cpp">

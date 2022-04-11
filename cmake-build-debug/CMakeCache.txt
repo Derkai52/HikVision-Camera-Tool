@@ -15,6 +15,9 @@
 ########################
 
 //Path to a program.
+CCACHE_FOUND:FILEPATH=CCACHE_FOUND-NOTFOUND
+
+//Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
 //Path to a program.

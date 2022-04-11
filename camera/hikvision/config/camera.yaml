@@ -1,26 +1,22 @@
-%YAML:1.0
----
-width: 1440                #图像宽度
-height: 1080               #图像高度
-Offset_x: 0                #X方向偏置
-Offset_y: 0                #Y方向偏置
-
-FrameRateEnable: false     #帧率控制使能
-FrameRate: 100             #帧率
-BurstFrameCount: 1         #一次触发采集的帧数
-ExposureMode: 0            #曝光模式(0:手动 1：一次 2：连续)
-ExposureTime: 5000         #曝光时间
-GammaEnable: false         #伽马使能
-Gamma: 0.7                 #伽马因子
-GainAuto: 2                #增益模式(0:手动 1：一次 2：连续)
-Gain: 15                   #增益系数
-SaturationEnable: false    #饱和度使能
-Saturation: 128            #饱和度
-BalanceWhiteMode: 0        #白平衡模式(0:手动 1：一次 2：连续)
-BalanceRatio_Red: 1400     #白平衡红色分量
-BalanceRatio_Green: 1000   #白平衡绿色分量
-BalanceRatio_Blue: 2000    #白平衡蓝色分量
-
-TriggerMode: 1             #触发模式
-TriggerSource: 2           #触发源
-LineSelector: 2            #触发线
+width: 1440
+height: 1080
+Offset_x: 0
+Offset_y: 0
+FrameRateEnable: false
+FrameRate: 100
+BurstFrameCount: 1
+ExposureMode: 0
+ExposureTime: 5000
+GammaEnable: false
+Gamma: 0.7
+GainAuto: 2
+Gain: 15
+SaturationEnable: false
+Saturation: 128
+BalanceWhiteMode: 0
+BalanceRatio_Red: 1400
+BalanceRatio_Green: 1000
+BalanceRatio_Blue: 2000
+TriggerMode: 1
+TriggerSource: 99
+LineSelector: 99

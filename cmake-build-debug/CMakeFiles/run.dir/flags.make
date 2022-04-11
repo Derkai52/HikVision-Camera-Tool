@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DHIK_CONFIG_FILE_PATH=\"/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/config\"
 
-CXX_INCLUDES = -I/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/include -I/usr/local/include/yaml-cpp -isystem /usr/local/include/opencv4
+CXX_INCLUDES = -I/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/include -I/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/tool/include -isystem /usr/local/include/opencv4
 
 CXX_FLAGS =  -O3 -DPATH="\"/home/tk/Desktop/Hikvision_Camera_Tool\"" -DLinux -std=c++11 -pthread -O3 -DNDEBUG -std=gnu++11
 

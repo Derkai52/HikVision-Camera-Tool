@@ -5,8 +5,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/src/hikvision_camera.cpp" "/home/tk/Desktop/Hikvision_Camera_Tool/cmake-build-debug/CMakeFiles/run.dir/camera/hikvision/src/hikvision_camera.cpp.o"
-  "/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/tool/calibration/calibrations.cpp" "/home/tk/Desktop/Hikvision_Camera_Tool/cmake-build-debug/CMakeFiles/run.dir/camera/hikvision/tool/calibration/calibrations.cpp.o"
-  "/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/tool/debug/camera_parms_debug.cpp" "/home/tk/Desktop/Hikvision_Camera_Tool/cmake-build-debug/CMakeFiles/run.dir/camera/hikvision/tool/debug/camera_parms_debug.cpp.o"
+  "/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/tool/src/calibration/calibrations.cpp" "/home/tk/Desktop/Hikvision_Camera_Tool/cmake-build-debug/CMakeFiles/run.dir/camera/hikvision/tool/src/calibration/calibrations.cpp.o"
+  "/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/tool/src/debug/camera_parms_debug.cpp" "/home/tk/Desktop/Hikvision_Camera_Tool/cmake-build-debug/CMakeFiles/run.dir/camera/hikvision/tool/src/debug/camera_parms_debug.cpp.o"
   "/home/tk/Desktop/Hikvision_Camera_Tool/main.cpp" "/home/tk/Desktop/Hikvision_Camera_Tool/cmake-build-debug/CMakeFiles/run.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
@@ -19,7 +19,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../camera/hikvision/include"
-  "/usr/local/include/yaml-cpp"
+  "../camera/hikvision/tool/include"
   "/usr/local/include/opencv4"
   )
 

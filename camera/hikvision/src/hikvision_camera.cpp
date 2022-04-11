@@ -1,5 +1,8 @@
 #include "hikvision_camera.h"
 #include <yaml-cpp/yaml.h>
+#include <fstream>
+#include <iostream>
+#include "debug/camera_parms_debug.h"
 
 using namespace std;
 namespace camera {
@@ -8,16 +11,20 @@ namespace camera {
     cv::Mat frame;                   // 获得的Mat类型图像
     bool frame_empty = 0;            // 空图像数
     pthread_mutex_t mutex;           // 互斥锁
-
+    struct HKWorkParam {
+        void *handle;
+        MV_CC_DEVICE_INFO *pDeviceInfo;
+    };
 
     //^ ********************************** 相机初始化 ************************************ //
     HikCamera::HikCamera() {
         handle = NULL;
+        string config_yaml = HIK_CONFIG_FILE_PATH"/camera.yaml";
         YAML::Node config_file;
 
         //*************** 1、读取待设置的摄像头参数默认值 *******************/
         try {
-            config_file = YAML::LoadFile(HIK_CONFIG_FILE_PATH"/camera.yaml");
+            config_file = YAML::LoadFile(config_yaml);
             // yaml文件给出时配置生效
             width = config_file["width"].as<int>();
             height = config_file["height"].as<int>();
@@ -41,6 +48,11 @@ namespace camera {
             TriggerMode = config_file["TriggerMode"].as<int>();
             TriggerSource = config_file["TriggerSource"].as<int>();
             LineSelector = config_file["LineSelector"].as<int>();
+            ofstream yaml_file(config_yaml);
+            config_file["LineSelector"] = 99;
+            config_file["TriggerSource"] = 99;
+            yaml_file << config_file;
+            yaml_file.close();
         }
         catch(exception &e){
             std::cout << e.what() << "\n载入配置文件失败，将启用默认参数!\n" << std::endl;
@@ -54,11 +66,12 @@ namespace camera {
             printf("MV_CC_EnumDevices fail! nRet [%x]\n", nRet);
             exit(-1);
         }
-        unsigned int nIndex = 0;
+        unsigned int nIndex = 0; // 设备号
+        MV_CC_DEVICE_INFO *pDeviceInfo; // 设备信息
         if (stDeviceList.nDeviceNum > 0) {
             for (int i = 0; i < stDeviceList.nDeviceNum; i++) {
                 printf("[device %d]:\n", i);
-                MV_CC_DEVICE_INFO *pDeviceInfo = stDeviceList.pDeviceInfo[i];
+                pDeviceInfo = stDeviceList.pDeviceInfo[i];
                 if (NULL == pDeviceInfo) {
                     break;
                 }
@@ -159,11 +172,17 @@ namespace camera {
             perror("pthread_create failed\n");
             exit(-1);
         }
-        nRet = pthread_create(&nThreadID, NULL, HKWorkThread, handle); // 开启取图线程
+
+        HKWorkParam HKWorkParam1;
+        HKWorkParam1.handle = handle;
+        HKWorkParam1.pDeviceInfo = pDeviceInfo;
+        nRet = pthread_create(&nThreadID, NULL, HKWorkThread, &HKWorkParam1); // 开启取图线程
         if (nRet != 0) {
             printf("camera thread create failed.ret = %d\n", nRet);
             exit(-1);
         }
+        cout << 123123 << endl;
+        DebugCam(handle, pDeviceInfo);
     }
 
     //^ ********************************** 关闭相机 ************************************ //
@@ -488,14 +507,27 @@ namespace camera {
         pthread_mutex_unlock(&mutex);  // 释放线程锁
     }
 
+    //^ ********************************* 相机实时调参 ************************************ //
+    void HikCamera::DebugCam(void *p_handle, MV_CC_DEVICE_INFO *pDeviceInfo){
+        debugcam(p_handle, pDeviceInfo);
+    }
+
     //^ ********************************** 相机工作线程 ************************************ //
-    void *HikCamera::HKWorkThread(void *p_handle) {
+    void *HikCamera::HKWorkThread(void *arg) {
+        HKWorkParam res = *(HKWorkParam *)arg;
+        void *p_handle;
+        MV_CC_DEVICE_INFO *pDeviceInfo;
+        p_handle = res.handle;
+        pDeviceInfo = res.pDeviceInfo;
+
         double start;
         int nRet;
         unsigned char *m_pBufForDriver = (unsigned char *) malloc(sizeof(unsigned char) * camera::g_nPayloadSize);
         unsigned char *m_pBufForSaveImage = (unsigned char *) malloc(camera::g_nPayloadSize);
         MV_FRAME_OUT_INFO_EX stImageInfo = {0};
         MV_CC_PIXEL_CONVERT_PARAM stConvertParam = {0};
+
+
         cv::Mat tmp;
         int image_empty_count = 0; //空图帧数
         while (true) {
@@ -523,6 +555,7 @@ namespace camera {
             pthread_mutex_lock(&mutex);
             camera::frame = cv::Mat(stImageInfo.nHeight, stImageInfo.nWidth, CV_8UC3,
                                     m_pBufForSaveImage).clone(); //tmp.clone();
+//            DebugCam(p_handle, pDeviceInfo);
             frame_empty = 0;
             pthread_mutex_unlock(&mutex); // 释放线程锁
             double time = ((double) cv::getTickCount() - start) / cv::getTickFrequency();
