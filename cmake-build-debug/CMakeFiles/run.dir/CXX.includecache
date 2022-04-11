@@ -22,6 +22,20 @@ CameraParams.h
 stdint.h
 -
 
+../camera/hikvision/include/hikvision_camera.h
+stdio.h
+-
+pthread.h
+-
+opencv2/opencv.hpp
+-
+MvErrorDefine.h
+../camera/hikvision/include/MvErrorDefine.h
+CameraParams.h
+../camera/hikvision/include/CameraParams.h
+MvCameraControl.h
+../camera/hikvision/include/MvCameraControl.h
+
 ../camera/hikvision/tool/include/debug/camera_parms_debug.h
 iostream
 -
@@ -30,9 +44,17 @@ opencv2/highgui.hpp
 MvCameraControl.h
 ../camera/hikvision/tool/include/debug/MvCameraControl.h
 
-/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/tool/src/debug/camera_parms_debug.cpp
+/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/src/hikvision_camera.cpp
+hikvision_camera.h
+/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/src/hikvision_camera.h
+yaml-cpp/yaml.h
+-
+fstream
+-
+iostream
+-
 debug/camera_parms_debug.h
-/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/tool/src/debug/debug/camera_parms_debug.h
+/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/src/debug/camera_parms_debug.h
 
 /usr/local/include/opencv4/opencv2/calib3d.hpp
 opencv2/core.hpp

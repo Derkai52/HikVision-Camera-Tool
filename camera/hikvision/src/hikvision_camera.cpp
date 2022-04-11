@@ -19,8 +19,9 @@ namespace camera {
     //^ ********************************** 相机初始化 ************************************ //
     HikCamera::HikCamera() {
         handle = NULL;
-        string config_yaml = HIK_CONFIG_FILE_PATH"/camera.yaml";
+        config_yaml = HIK_CONFIG_FILE_PATH"/camera.yaml";
         YAML::Node config_file;
+        bool DEBUG_FLAG = true; // 相机参数实时调试模式标识符
 
         //*************** 1、读取待设置的摄像头参数默认值 *******************/
         try {
@@ -182,7 +183,10 @@ namespace camera {
             exit(-1);
         }
 
-        DebugCam(handle, pDeviceInfo); // 相机参数实时调试模式
+        //********** 8、拓展功能 **********/
+        if (DEBUG_FLAG){
+            DebugCam(handle, pDeviceInfo); // 相机参数实时调试模式
+        }
     }
 
     //^ ********************************** 关闭相机 ************************************ //

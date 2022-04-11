@@ -11,7 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="056420fb-1b2a-4653-964d-1c1c21f78869" name="默认变更列表" comment="update： 重新整理了类">
+    <list default="true" id="056420fb-1b2a-4653-964d-1c1c21f78869" name="默认变更列表" comment="update： update readme">
       <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../.idea/Desktop.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
@@ -30,8 +30,13 @@
       <change afterPath="$PROJECT_DIR$/../项目/其他资料/DJI_EP_SDK/.idea/github-关联SDK.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../项目/天池/tianchi_submit_demo/.idea/tianchi_submit_demo.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../项目/手势识别语音打卡/mask_detection/.idea/kouzhao.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera/hikvision/include/hikvision_camera.h" beforeDir="false" afterPath="$PROJECT_DIR$/camera/hikvision/include/hikvision_camera.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/camera/hikvision/src/hikvision_camera.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/camera/hikvision/src/hikvision_camera.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/camera/hikvision/tool/src/debug/camera_parms_debug.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/camera/hikvision/tool/src/debug/camera_parms_debug.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/camera/hikvision/src/hikvision_camera.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/camera/hikvision/src/hikvision_camera.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/run" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/run" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/CMakeLists.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/LICENSE" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/README.md" beforeDir="false" />
@@ -271,7 +276,7 @@
       <workItem from="1649589278808" duration="3615000" />
       <workItem from="1649595229094" duration="13406000" />
       <workItem from="1649611430148" duration="39000" />
-      <workItem from="1649664999139" duration="27850000" />
+      <workItem from="1649664999139" duration="28458000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1648174399072</created>
@@ -315,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649704409013</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update： update readme">
+      <created>1649705260164</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1649705260164</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,6 +348,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />
     <MESSAGE value="update： 重新整理了类" />
-    <option name="LAST_COMMIT_MESSAGE" value="update： 重新整理了类" />
+    <MESSAGE value="update： update readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="update： update readme" />
   </component>
 </project>

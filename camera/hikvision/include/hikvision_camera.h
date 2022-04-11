@@ -64,9 +64,9 @@ namespace camera
 
 
     private:
-        void *handle; // 相机操作句柄
-
-        pthread_t nThreadID;
+        void *handle;            // 相机操作句柄
+        std::string config_yaml; // 相机参数配置文件路径
+        pthread_t nThreadID;     // 相机工作线程
 
         //********** 海康相机参数表(同上) **************/
         int nRet;
