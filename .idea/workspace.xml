@@ -19,8 +19,6 @@
       <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../HNU_RMUT_Vision-main/.idea/HNU_RMUT_Vision-main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/camera/hikvision/tool/include/calibration/calibrations.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/camera/hikvision/tool/include/debug/camera_parms_debug.h" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../WolfVision-main/.idea/WolfVision-main.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../calibration/.idea/calibration.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../学习/numpy_sd/.idea/numpy_sd.iml" afterDir="false" />
@@ -33,29 +31,9 @@
       <change afterPath="$PROJECT_DIR$/../项目/天池/tianchi_submit_demo/.idea/tianchi_submit_demo.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../项目/手势识别语音打卡/mask_detection/.idea/kouzhao.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/camera/hikvision/config/camera.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/camera/hikvision/config/camera.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/camera/hikvision/include/hikvision_camera.h" beforeDir="false" afterPath="$PROJECT_DIR$/camera/hikvision/include/hikvision_camera.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/camera/hikvision/src/hikvision_camera.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/camera/hikvision/src/hikvision_camera.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/camera/hikvision/tool/calibration/calibrations.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/camera/hikvision/tool/src/calibration/calibrations.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/camera/hikvision/tool/calibration/calibrations.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/camera/hikvision/tool/debug/camera_parms_debug.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/camera/hikvision/tool/src/debug/camera_parms_debug.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/camera/hikvision/tool/debug/camera_parms_debug.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/camera/hikvision/src/hikvision_camera.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/camera/hikvision/src/hikvision_camera.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera/hikvision/tool/src/debug/camera_parms_debug.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/camera/hikvision/tool/src/debug/camera_parms_debug.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/hikvision_camera_tool.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/hikvision_camera_tool.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/run" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/run" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/CMakeLists.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/LICENSE" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/README.md" beforeDir="false" />
@@ -295,7 +273,7 @@
       <workItem from="1649589278808" duration="3615000" />
       <workItem from="1649595229094" duration="13406000" />
       <workItem from="1649611430148" duration="39000" />
-      <workItem from="1649664999139" duration="25258000" />
+      <workItem from="1649664999139" duration="26965000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1648174399072</created>
@@ -325,7 +303,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649609228167</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update： 重新整理了类">
+      <created>1649702717862</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1649702717862</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
