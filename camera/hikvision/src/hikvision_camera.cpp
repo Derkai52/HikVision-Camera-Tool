@@ -11,7 +11,7 @@ namespace camera {
     cv::Mat frame;                   // 获得的Mat类型图像
     bool frame_empty = 0;            // 空图像数
     pthread_mutex_t mutex;           // 互斥锁
-    struct HKWorkParam {
+    struct HKWorkParam {             // 常用信息结构体
         void *handle;
         MV_CC_DEVICE_INFO *pDeviceInfo;
     };
@@ -181,8 +181,8 @@ namespace camera {
             printf("camera thread create failed.ret = %d\n", nRet);
             exit(-1);
         }
-        cout << 123123 << endl;
-        DebugCam(handle, pDeviceInfo);
+
+        DebugCam(handle, pDeviceInfo); // 相机参数实时调试模式
     }
 
     //^ ********************************** 关闭相机 ************************************ //
@@ -514,11 +514,9 @@ namespace camera {
 
     //^ ********************************** 相机工作线程 ************************************ //
     void *HikCamera::HKWorkThread(void *arg) {
-        HKWorkParam res = *(HKWorkParam *)arg;
-        void *p_handle;
-        MV_CC_DEVICE_INFO *pDeviceInfo;
-        p_handle = res.handle;
-        pDeviceInfo = res.pDeviceInfo;
+        HKWorkParam res = *(HKWorkParam *)arg; // 相机常用信息结构体解包
+        void *p_handle = res.handle;
+        MV_CC_DEVICE_INFO *pDeviceInfo = res.pDeviceInfo;
 
         double start;
         int nRet;
@@ -541,8 +539,8 @@ namespace camera {
                 continue;
             }
             image_empty_count = 0; //空图帧数
-            //转换图像格式为BGR8
 
+            //转换图像格式为BGR8
             stConvertParam.nWidth = stImageInfo.nWidth;                 //ch:图像宽 | en:image width
             stConvertParam.nHeight = stImageInfo.nHeight;               //ch:图像高 | en:image height
             stConvertParam.pSrcData = m_pBufForDriver;                  //ch:输入数据缓存 | en:input data buffer
@@ -555,7 +553,7 @@ namespace camera {
             pthread_mutex_lock(&mutex);
             camera::frame = cv::Mat(stImageInfo.nHeight, stImageInfo.nWidth, CV_8UC3,
                                     m_pBufForSaveImage).clone(); //tmp.clone();
-//            DebugCam(p_handle, pDeviceInfo);
+
             frame_empty = 0;
             pthread_mutex_unlock(&mutex); // 释放线程锁
             double time = ((double) cv::getTickCount() - start) / cv::getTickFrequency();
