@@ -11,7 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="056420fb-1b2a-4653-964d-1c1c21f78869" name="默认变更列表" comment="update： update readme">
+    <list default="true" id="056420fb-1b2a-4653-964d-1c1c21f78869" name="默认变更列表" comment="fix：fix bug">
       <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../.idea/Desktop.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
@@ -30,12 +30,6 @@
       <change afterPath="$PROJECT_DIR$/../项目/其他资料/DJI_EP_SDK/.idea/github-关联SDK.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../项目/天池/tianchi_submit_demo/.idea/tianchi_submit_demo.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../项目/手势识别语音打卡/mask_detection/.idea/kouzhao.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/camera/hikvision/tool/include/debug/camera_parms_debug.h" beforeDir="false" afterPath="$PROJECT_DIR$/camera/hikvision/tool/include/debug/camera_parms_debug.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/camera/hikvision/tool/src/debug/camera_parms_debug.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/camera/hikvision/tool/src/debug/camera_parms_debug.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/run" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/run" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/CMakeLists.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/LICENSE" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/README.md" beforeDir="false" />
@@ -221,7 +215,7 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="cmake.loaded.for.project" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/camera/hikvision/tool/debug" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TUP-Vision-4.1.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -241,11 +235,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -254,6 +243,11 @@
     <configuration name="run" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="hikvision_camera_tool" TARGET_NAME="run" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="hikvision_camera_tool" RUN_TARGET_NAME="run">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -275,7 +269,7 @@
       <workItem from="1649589278808" duration="3615000" />
       <workItem from="1649595229094" duration="13406000" />
       <workItem from="1649611430148" duration="39000" />
-      <workItem from="1649664999139" duration="37281000" />
+      <workItem from="1649664999139" duration="38078000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1648174399072</created>
@@ -333,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649705923587</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fix：fix bug">
+      <created>1649737144459</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1649737144459</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,6 +356,7 @@
     <MESSAGE value="update" />
     <MESSAGE value="update： 重新整理了类" />
     <MESSAGE value="update： update readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="update： update readme" />
+    <MESSAGE value="fix：fix bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix：fix bug" />
   </component>
 </project>

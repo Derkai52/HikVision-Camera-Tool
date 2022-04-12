@@ -173,7 +173,6 @@ run: /usr/local/lib/libopencv_xfeatures2d.so.4.1.2
 run: /usr/local/lib/libopencv_xobjdetect.so.4.1.2
 run: /usr/local/lib/libopencv_xphoto.so.4.1.2
 run: /usr/local/lib/libyaml-cpp.so
-run: ../camera/hikvision/libMVSDK.so
 run: /usr/local/lib/libopencv_shape.so.4.1.2
 run: /usr/local/lib/libopencv_highgui.so.4.1.2
 run: /usr/local/lib/libopencv_datasets.so.4.1.2
