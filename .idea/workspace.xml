@@ -30,6 +30,11 @@
       <change afterPath="$PROJECT_DIR$/../项目/其他资料/DJI_EP_SDK/.idea/github-关联SDK.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../项目/天池/tianchi_submit_demo/.idea/tianchi_submit_demo.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../项目/手势识别语音打卡/mask_detection/.idea/kouzhao.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/run" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/run" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/CMakeLists.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/LICENSE" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/README.md" beforeDir="false" />
@@ -235,9 +240,9 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
     <configuration name="run" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="hikvision_camera_tool" TARGET_NAME="run" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="hikvision_camera_tool" RUN_TARGET_NAME="run">
@@ -270,6 +275,8 @@
       <workItem from="1649595229094" duration="13406000" />
       <workItem from="1649611430148" duration="39000" />
       <workItem from="1649664999139" duration="38078000" />
+      <workItem from="1649779312806" duration="1137000" />
+      <workItem from="1649784428218" duration="795000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1648174399072</created>
@@ -334,7 +341,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649737144459</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fix：fix bug">
+      <created>1649779498326</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1649779498326</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
