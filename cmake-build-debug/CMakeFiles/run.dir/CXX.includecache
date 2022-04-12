@@ -56,6 +56,10 @@ iostream
 debug/camera_parms_debug.h
 /home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/src/debug/camera_parms_debug.h
 
+/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/tool/src/debug/camera_parms_debug.cpp
+debug/camera_parms_debug.h
+/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/tool/src/debug/debug/camera_parms_debug.h
+
 /usr/local/include/opencv4/opencv2/calib3d.hpp
 opencv2/core.hpp
 /usr/local/include/opencv4/opencv2/opencv2/core.hpp

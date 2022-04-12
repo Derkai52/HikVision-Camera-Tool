@@ -1,87 +1,61 @@
 #include "debug/camera_parms_debug.h"
 
-
 //^ ********************************** 海康机器人MV系列相机参数初始化 ************************************ //
-// 相机参数滑动条参数初始化
-// 因为无法修改滑动条步长。为了保证实际控制步长在小数点后4位。进行了 *1000 和 /1000的操作。
-char TrackbarName[50];
-
 // Warning: 需要根据相机实际情况获取最大值,暂因SDK原因无法获得
-const double exposureTime_slider_max = 20000; // 限制曝光最大值为20000
-int exposureTime_slider = 5000; // 曝光初始值
-double exposureTime;
+int exposureTime_slider=5000; // 曝光初始值
+int gain_slider = 10;         // 增益初始值
+int gammas_slider = 1 * 1000; // gammas初始值
 
-double gain_slider_max = 17; // 限制 gain 最大值为15
-int gain_slider = 10;
-double gain;
-
-const double gammas_slider_max = 2 * 1000; // 限制正常使用范围限制(0~2)  gammas 最大值为4
-int gammas_slider = 1 * 1000;
-double gammas;
-
-// 白平衡
-const int balanceRatioRed_slider_max = 3000; // 限制正常使用范围限制(0~3000)  bug:需要加一个自动白平衡选项
+// 白平衡初始值
 int balanceRatioRed_slider = 1400;
-int balanceRatioRed;
-
-const int balanceRatioGreen_slider_max = 3000; // 限制正常使用范围限制(0~3000)  bug:需要加一个自动白平衡选项
 int balanceRatioGreen_slider = 1000;
-int balanceRatioGreen;
-
-const int balanceRatioBlue_slider_max = 3000; // 限制正常使用范围限制(0~3000)  bug:需要加一个自动白平衡选项
 int balanceRatioBlue_slider = 2000;
-int balanceRatioBlue;
 
 
-static void exposureTrackbar(int, void *p_handle) {
+
+void exposureTrackbar(int, void *p_handle) {
     int nRet = 0;
-    exposureTime = exposureTime_slider;
-    nRet = MV_CC_SetExposureTime(p_handle, exposureTime);
+    nRet = MV_CC_SetExposureTime(p_handle, exposureTime_slider);
     if (MV_OK != nRet) {
         printf("Set ExposureTime fail! nRet [0x%x] 或检查曝光模式\n", nRet);
     }
 }
 
-static void gainTrackbar(int, void *p_handle) {
+void gainTrackbar(int, void *p_handle) {
     int nRet = 0;
-    gain = gain_slider;
-    nRet = MV_CC_SetGain(p_handle, gain);
+    nRet = MV_CC_SetGain(p_handle, gain_slider);
     if (MV_OK != nRet) {
         printf("Set Gain fail! nRet [0x%x] 或检查Gain模式\n", nRet);
     }
 }
 
-static void gammasTrackbar(int, void *p_handle) {
+void gammasTrackbar(int, void *p_handle) {
     int nRet = 0;
-    gammas = (double) gammas_slider / 1000;
-    nRet = MV_CC_SetGamma(p_handle, gammas);
+    nRet = MV_CC_SetGamma(p_handle, ((double) gammas_slider / 1000));
     if (MV_OK != nRet) {
         printf("Set Gammas fail! nRet [0x%x] 或检查Gamma模式\n", nRet);
     }
 }
 
-static void balanceRatioRedTrackbar(int, void *p_handle) {
+void balanceRatioRedTrackbar(int, void *p_handle) {
     int nRet = 0;
-    balanceRatioRed = balanceRatioRed_slider;
-    nRet = MV_CC_SetBalanceRatioRed(p_handle, balanceRatioRed);
+    nRet = MV_CC_SetBalanceRatioRed(p_handle, balanceRatioRed_slider);
     if (MV_OK != nRet) {
         printf("Set BalanceRatioRed fail! nRet [0x%x] 或检查白平衡模式\n", nRet);
     }
 }
 
-static void balanceRatioGreenTrackbar(int, void *p_handle) {
+void balanceRatioGreenTrackbar(int, void *p_handle) {
     int nRet = 0;
-    balanceRatioGreen = balanceRatioGreen_slider;
-    nRet = MV_CC_SetBalanceRatioGreen(p_handle, balanceRatioGreen);
+    nRet = MV_CC_SetBalanceRatioGreen(p_handle, balanceRatioGreen_slider);
     if (MV_OK != nRet) {
         printf("Set BalanceRatioGreen fail! nRet [0x%x] 或检查白平衡模式\n", nRet);
     }
 }
 
-static void balanceRatioBlueTrackbar(int, void *p_handle) {
+void balanceRatioBlueTrackbar(int, void *p_handle) {
     int nRet = 0;
-    balanceRatioBlue = balanceRatioBlue_slider;
-    nRet = MV_CC_SetBalanceRatioBlue(p_handle, balanceRatioBlue);
+    nRet = MV_CC_SetBalanceRatioBlue(p_handle, balanceRatioBlue_slider);
     if (MV_OK != nRet) {
         printf("Set balanceRatioBlue fail! nRet [0x%x] 或检查白平衡模式\n", nRet);
     }
@@ -92,6 +66,14 @@ void debugcam(void *p_handle, MV_CC_DEVICE_INFO *pDeviceInfo) {
     string window_name = "Debug-Tool"; // 输入窗口名即可附加在窗口上，若无同名窗口则新建该窗口
     namedWindow(window_name); // warning: 关闭窗口后将不再显示滑动条
     resizeWindow(window_name, 500, 500);
+
+    char TrackbarName[50];
+    const double exposureTime_slider_max = 20000; // 限制曝光最大值为20000
+    double gain_slider_max = 17; // 限制 gain 最大值为15
+    const double gammas_slider_max = 2 * 1000; // 限制正常使用范围限制(0~2)  gammas 最大值为4
+    const int balanceRatioRed_slider_max = 3000; // 限制正常使用范围限制(0~3000)  bug:需要加一个自动白平衡选项
+    const int balanceRatioGreen_slider_max = 3000; // 限制正常使用范围限制(0~3000)  bug:需要加一个自动白平衡选项
+    const int balanceRatioBlue_slider_max = 3000; // 限制正常使用范围限制(0~3000)  bug:需要加一个自动白平衡选项
 
 
     // BUG:暂因SDK原因无法获得【海康设备获取硬件参数值有效范围】。所以针对不同设备预设置不同参数。详情请参照海康官网设备信息。
