@@ -17,7 +17,7 @@ namespace camera {
     };
 
     //^ ********************************** 相机初始化 ************************************ //
-    HikCamera::HikCamera() {
+    void HikCamera::Init() {
         handle = NULL;
         config_yaml = HIK_CONFIG_FILE_PATH"/camera.yaml";
         YAML::Node config_file;

@@ -6,9 +6,11 @@ using namespace std;
 using namespace cv;
 using namespace camera;
 
+HikCamera MVS_cap;
+
 int main() {
     Mat src;
-    HikCamera MVS_cap; // 初始化相机
+    MVS_cap.Init();        // 初始化相机
     MVS_cap.CamInfoShow(); // 显示图像参数信息
     while (true) {
         MVS_cap.ReadImg(src); // 相机取图

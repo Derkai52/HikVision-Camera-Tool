@@ -43,9 +43,10 @@ namespace camera
     {
     public:
 
-        HikCamera();
         ~HikCamera();
 
+        //*********** 相机初始化 ******************/
+        void Init();
         //********** 相机工作线程 ******************/
         static void *HKWorkThread(void *arg);
         //********** 输出设备信息 ******************/
