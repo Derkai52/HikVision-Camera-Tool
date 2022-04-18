@@ -12,173 +12,179 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="056420fb-1b2a-4653-964d-1c1c21f78869" name="默认变更列表" comment="fix：fix bug">
-      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/Desktop.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HNU_RMUT_Vision-main/.idea/HNU_RMUT_Vision-main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WolfVision-main/.idea/WolfVision-main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../calibration/.idea/calibration.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../学习/numpy_sd/.idea/numpy_sd.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../数据可视化/test1/.idea/test1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../数据可视化/test1/test1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../数据可视化/test3/.idea/test3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../数据可视化/test4/.idea/test4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../深度学习/test1/.idea/test1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../项目/其他资料/DJI_EP_SDK/.idea/github-关联SDK.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../项目/天池/tianchi_submit_demo/.idea/tianchi_submit_demo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../项目/手势识别语音打卡/mask_detection/.idea/kouzhao.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/camera/hikvision/tool/include/CAMERA_LOG.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/camera/hikvision/tool/include/calibration/cameraCalibration.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/camera/hikvision/tool/include/fileOperation/fileOperation.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/camera/hikvision/tool/include/systemChoose.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/camera/hikvision/tool/src/calibration/cameraCalibration.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/camera/hikvision/tool/src/fileOperation/fileOperation.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera/hikvision/tool/include/calibration/calibrations.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera/hikvision/tool/src/calibration/calibrations.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/camera/hikvision/src/hikvision_camera.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/camera/hikvision/src/hikvision_camera.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/run" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/run" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/armor/include/armor_finder/armor_finder.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/armor/include/armor_finder/classifier/classifier.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/armor/include/show_images/show_images.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/armor/src/armor_finder/anti_top/anti_top.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/armor/src/armor_finder/armor_box/armor_box.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/armor/src/armor_finder/armor_finder.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/armor/src/armor_finder/classifier/classifier.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/armor/src/armor_finder/find/find_armor_box.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/armor/src/armor_finder/find/find_light_blobs.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/armor/src/armor_finder/searching_state/searching_state.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/armor/src/armor_finder/send_target/send_target.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/armor/src/armor_finder/standby_state/standby_state.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/armor/src/armor_finder/tracking_state/tracking_state.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/armor/src/show_images/show_images.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/energy/include/energy/constant.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/energy/include/energy/energy.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/energy/include/energy/param_struct_define.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/energy/src/energy/calibrate/split.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/energy/src/energy/calibrate/structing.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/energy/src/energy/change/mode_change.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/energy/src/energy/change/multiple_mode.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/energy/src/energy/change/target_change.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/energy/src/energy/clear/clear.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/energy/src/energy/clear/energy_init.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/energy/src/energy/energy.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/energy/src/energy/find/energy_finder.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/energy/src/energy/find/target_finder.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/energy/src/energy/get/get_aim_point.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/energy/src/energy/get/get_center.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/energy/src/energy/get/get_guess_point.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/energy/src/energy/get/get_polar_angle.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/energy/src/energy/get/get_predict_point.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/energy/src/energy/judge/judge_contour.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/energy/src/energy/judge/judge_mode.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/energy/src/energy/judge/judge_shoot.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/energy/src/energy/judge/judge_time.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/energy/src/energy/mark/mark.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/energy/src/energy/run.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/energy/src/energy/send/send.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/energy/src/energy/show/show.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/energy/src/energy/tool/tool.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/64/libFormatConversion.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/64/libGCBase_gcc421_v3_0.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/64/libGenApi_gcc421_v3_0.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/64/libLog_gcc421_v3_0.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/64/libMVGigEVisionSDK.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/64/libMVGigEVisionSDK.so.3.0.0.10" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/64/libMVRender.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/64/libMathParser_gcc421_v3_0.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/64/libMediaProcess.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/64/libMvCameraControl.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/64/libMvCameraControl.so.3.0.0.10" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/64/libMvUsb3vTL.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/64/libMvUsb3vTL.so.3.0.0.10" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/64/libNodeMapData_gcc421_v3_0.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/64/libXmlParser_gcc421_v3_0.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/64/liblog4cpp_gcc421_v3_0.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/MVCAMSDK_X64.lib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/armor.Config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/energy.Config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/CameraParams.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/HIk/CameraParams.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/HIk/HikCamera.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/HIk/MvCameraControl.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/HIk/MvDeviceBase.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/HIk/MvErrorDefine.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/HIk/MvGigEDevice.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/HIk/MvInclude.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/HIk/MvUsb3VDevice.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/HIk/PixelType.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/HIk/TlFactory.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/MvCameraControl.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/MvDeviceBase.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/MvErrorDefine.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/MvGigEDevice.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/MvInclude.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/MvUsb3VDevice.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/PixelType.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/TlFactory.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/additions.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/camera/CameraApi.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/camera/CameraApiLoad.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/camera/CameraDefine.H" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/camera/CameraGrabber.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/camera/CameraImage.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/camera/CameraStatus.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/camera/Hikcamera_debug.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/camera/Hikcamera_wrapper.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/camera/camera_api.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/camera/camera_define.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/camera/camera_status.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/camera/camera_wrapper.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/camera/video_wrapper.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/camera/wrapper_head.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/config/setconfig.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/constants.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/log.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/options.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/serial.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/include/systime.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/libMVSDK.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/libmvsdk.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/src/HikCamera.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/src/additions.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/src/camera/Hikcamera_debug.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/src/camera/Hikcamera_wrapper.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/src/camera/camera_wrapper.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/src/camera/video_wrapper.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/src/options.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/src/serial.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/others/src/systime.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/tools/TrainCNN/backward.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/tools/TrainCNN/cv_grab.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/tools/TrainCNN/forward.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/tools/TrainCNN/generate.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/tools/TrainCNN/grab.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/tools/TrainCNN/mvsdk.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/tools/analysis.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/tools/auto-pull.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/tools/create-startup.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/tools/monitor.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/tools/monitor.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/tools/para/conv1_b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/tools/para/conv1_w" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/tools/para/conv2_b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/tools/para/conv2_w" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/tools/para/conv3_b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/tools/para/conv3_w" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/tools/para/fc1_b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/tools/para/fc1_w" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/tools/para/fc2_b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/tools/para/fc2_w" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/摄像头更换必看/1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/摄像头更换必看/2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/摄像头更换必看/摄像头更换看我.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/测试代码/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/测试代码/建立数据集/save_labelled" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/测试代码/开机自启动/.start_test.sh.swp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/测试代码/开机自启动/auto_start.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rm2021_cidp_vision/测试代码/测试距离/save_distance.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/hikvision_camera_tool.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/hikvision_camera_tool.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/run" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/armor/include/armor_finder/armor_finder.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/armor/include/armor_finder/classifier/classifier.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/armor/include/show_images/show_images.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/armor/src/armor_finder/anti_top/anti_top.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/armor/src/armor_finder/armor_box/armor_box.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/armor/src/armor_finder/armor_finder.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/armor/src/armor_finder/classifier/classifier.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/armor/src/armor_finder/find/find_armor_box.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/armor/src/armor_finder/find/find_light_blobs.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/armor/src/armor_finder/searching_state/searching_state.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/armor/src/armor_finder/send_target/send_target.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/armor/src/armor_finder/standby_state/standby_state.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/armor/src/armor_finder/tracking_state/tracking_state.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/armor/src/show_images/show_images.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/armor_red.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/camera/hikvision/64/libFormatConversion.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/camera/hikvision/64/libGCBase_gcc421_v3_0.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/camera/hikvision/64/libGenApi_gcc421_v3_0.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/camera/hikvision/64/libLog_gcc421_v3_0.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/camera/hikvision/64/libMVGigEVisionSDK.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/camera/hikvision/64/libMVGigEVisionSDK.so.3.0.0.10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/camera/hikvision/64/libMVRender.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/camera/hikvision/64/libMathParser_gcc421_v3_0.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/camera/hikvision/64/libMediaProcess.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/camera/hikvision/64/libMvCameraControl.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/camera/hikvision/64/libMvCameraControl.so.3.0.0.10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/camera/hikvision/64/libMvUsb3vTL.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/camera/hikvision/64/libMvUsb3vTL.so.3.0.0.10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/camera/hikvision/64/libNodeMapData_gcc421_v3_0.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/camera/hikvision/64/libXmlParser_gcc421_v3_0.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/camera/hikvision/64/liblog4cpp_gcc421_v3_0.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/camera/hikvision/config/camera.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/camera/hikvision/config/camera_bak.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/camera/hikvision/include/CameraParams.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/camera/hikvision/include/MvCameraControl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/camera/hikvision/include/MvDeviceBase.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/camera/hikvision/include/MvErrorDefine.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/camera/hikvision/include/MvGigEDevice.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/camera/hikvision/include/MvInclude.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/camera/hikvision/include/MvUsb3VDevice.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/camera/hikvision/include/PixelType.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/camera/hikvision/include/TlFactory.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/camera/hikvision/include/hikvision_camera.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/camera/hikvision/src/hikvision_camera.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/camera/hikvision/tool/include/calibration/calibrations.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/camera/hikvision/tool/include/calibration/棋盘格图片.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/camera/hikvision/tool/include/debug/camera_parms_debug.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/camera/hikvision/tool/src/calibration/calibrations.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/camera/hikvision/tool/src/debug/camera_parms_debug.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/doc/Opencv-4.1.2离线安装教程.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/doc/resource/debug_doc/.keep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/doc/resource/debug_doc/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/doc/resource/debug_doc/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/doc/resource/env_install_doc/.keep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/doc/resource/env_install_doc/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/doc/resource/monocular_ranging_doc/.keep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/doc/resource/monocular_ranging_doc/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/doc/resource/monocular_ranging_doc/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/doc/resource/opencv_install_doc/.keep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/doc/resource/opencv_install_doc/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/doc/resource/opencv_install_doc/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/doc/resource/readme_doc/自瞄流程图.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/doc/代码调试说明V1.2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/doc/关于代码单目测距的误差解释.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/doc/操作手自瞄使用手册V1.1.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/doc/环境配置手册.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/energy/include/energy/constant.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/energy/include/energy/energy.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/energy/include/energy/param_struct_define.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/energy/src/energy/calibrate/split.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/energy/src/energy/calibrate/structing.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/energy/src/energy/change/mode_change.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/energy/src/energy/change/multiple_mode.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/energy/src/energy/change/target_change.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/energy/src/energy/clear/clear.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/energy/src/energy/clear/energy_init.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/energy/src/energy/energy.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/energy/src/energy/find/energy_finder.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/energy/src/energy/find/target_finder.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/energy/src/energy/get/get_aim_point.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/energy/src/energy/get/get_center.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/energy/src/energy/get/get_guess_point.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/energy/src/energy/get/get_polar_angle.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/energy/src/energy/get/get_predict_point.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/energy/src/energy/judge/judge_contour.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/energy/src/energy/judge/judge_mode.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/energy/src/energy/judge/judge_shoot.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/energy/src/energy/judge/judge_time.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/energy/src/energy/mark/mark.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/energy/src/energy/run.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/energy/src/energy/send/send.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/energy/src/energy/show/show.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/energy/src/energy/tool/tool.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/others/MVCAMSDK_X64.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/others/armor.Config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/others/energy.Config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/others/include/additions.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/others/include/camera/CameraApi.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/others/include/camera/CameraApiLoad.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/others/include/camera/CameraDefine.H" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/others/include/camera/CameraGrabber.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/others/include/camera/CameraImage.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/others/include/camera/CameraStatus.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/others/include/camera/camera_api.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/others/include/camera/camera_define.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/others/include/camera/camera_status.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/others/include/camera/camera_wrapper.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/others/include/camera/video_wrapper.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/others/include/camera/wrapper_head.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/others/include/config/setconfig.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/others/include/constants.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/others/include/log.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/others/include/options.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/others/include/serial.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/others/include/systime.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/others/libMVSDK.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/others/libmvsdk.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/others/src/additions.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/others/src/camera/camera_wrapper.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/others/src/camera/video_wrapper.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/others/src/options.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/others/src/serial.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/others/src/systime.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/tools/TrainCNN/backward.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/tools/TrainCNN/cv_grab.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/tools/TrainCNN/forward.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/tools/TrainCNN/generate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/tools/TrainCNN/grab.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/tools/TrainCNN/mvsdk.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/tools/analysis.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/tools/auto-pull.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/tools/create-startup.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/tools/monitor.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/tools/monitor.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/tools/para/conv1_b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/tools/para/conv1_w" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/tools/para/conv2_b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/tools/para/conv2_w" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/tools/para/conv3_b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/tools/para/conv3_w" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/tools/para/fc1_b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/tools/para/fc1_w" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/tools/para/fc2_b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/tools/para/fc2_w" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,23 +226,23 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="cmake.loaded.for.project" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TUP-Vision-4.1.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/camera/hikvision/tool/include" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/camera/hikvision/tool/debug" />
-      <recent name="$PROJECT_DIR$/camera/hikvision/tool/calibration" />
-      <recent name="$PROJECT_DIR$/camera/hikvision/config" />
-      <recent name="$PROJECT_DIR$/camera/hikvision/include" />
-      <recent name="$PROJECT_DIR$/camera/hikvision" />
+      <recent name="$PROJECT_DIR$/camera/hikvision/tool/include" />
+      <recent name="$PROJECT_DIR$/camera/hikvision/tool/include/log" />
+      <recent name="$PROJECT_DIR$/camera/hikvision/tool/src/fileOperation" />
+      <recent name="$PROJECT_DIR$/camera/hikvision/tool/include/fileOperation" />
+      <recent name="$PROJECT_DIR$/camera/hikvision/tool/include/calibration" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/camera/hikvision/tool/include" />
-      <recent name="$PROJECT_DIR$/camera/hikvision/tool/debug/src" />
-      <recent name="$PROJECT_DIR$/camera/hikvision/tool/calibration/src" />
-      <recent name="$PROJECT_DIR$/camera/hikvision/tool/debug" />
-      <recent name="$PROJECT_DIR$/camera/hikvision/tool/calibration" />
+      <recent name="$PROJECT_DIR$/camera/hikvision/tool/src/fileOperation" />
+      <recent name="$PROJECT_DIR$/camera/hikvision/tool/include/fileOperation" />
+      <recent name="$PROJECT_DIR$/camera/hikvision/tool/src/calibration" />
+      <recent name="$PROJECT_DIR$/camera/hikvision/tool/include/calibration" />
     </key>
   </component>
   <component name="RunManager">
@@ -276,7 +282,11 @@
       <workItem from="1649611430148" duration="39000" />
       <workItem from="1649664999139" duration="38078000" />
       <workItem from="1649779312806" duration="1137000" />
-      <workItem from="1649784428218" duration="795000" />
+      <workItem from="1649784428218" duration="2768000" />
+      <workItem from="1649859724167" duration="2586000" />
+      <workItem from="1650007687161" duration="29000" />
+      <workItem from="1650007749387" duration="69000" />
+      <workItem from="1650298510338" duration="2056000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1648174399072</created>
@@ -348,7 +358,21 @@
       <option name="project" value="LOCAL" />
       <updated>1649779498326</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fix：fix bug">
+      <created>1649785274638</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1649785274638</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fix：fix bug">
+      <created>1649859972786</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1649859972786</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

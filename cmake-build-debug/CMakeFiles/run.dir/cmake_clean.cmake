@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/run.dir/camera/hikvision/src/hikvision_camera.cpp.o"
-  "CMakeFiles/run.dir/camera/hikvision/tool/src/calibration/calibrations.cpp.o"
+  "CMakeFiles/run.dir/camera/hikvision/tool/src/calibration/cameraCalibration.cpp.o"
   "CMakeFiles/run.dir/camera/hikvision/tool/src/debug/camera_parms_debug.cpp.o"
+  "CMakeFiles/run.dir/camera/hikvision/tool/src/fileOperation/fileOperation.cpp.o"
   "CMakeFiles/run.dir/main.cpp.o"
   "run"
   "run.pdb"

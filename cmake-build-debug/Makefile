@@ -169,32 +169,32 @@ camera/hikvision/src/hikvision_camera.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/camera/hikvision/src/hikvision_camera.cpp.s
 .PHONY : camera/hikvision/src/hikvision_camera.cpp.s
 
-camera/hikvision/tool/src/calibration/calibrations.o: camera/hikvision/tool/src/calibration/calibrations.cpp.o
+camera/hikvision/tool/src/calibration/cameraCalibration.o: camera/hikvision/tool/src/calibration/cameraCalibration.cpp.o
 
-.PHONY : camera/hikvision/tool/src/calibration/calibrations.o
+.PHONY : camera/hikvision/tool/src/calibration/cameraCalibration.o
 
 # target to build an object file
-camera/hikvision/tool/src/calibration/calibrations.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/camera/hikvision/tool/src/calibration/calibrations.cpp.o
-.PHONY : camera/hikvision/tool/src/calibration/calibrations.cpp.o
+camera/hikvision/tool/src/calibration/cameraCalibration.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/camera/hikvision/tool/src/calibration/cameraCalibration.cpp.o
+.PHONY : camera/hikvision/tool/src/calibration/cameraCalibration.cpp.o
 
-camera/hikvision/tool/src/calibration/calibrations.i: camera/hikvision/tool/src/calibration/calibrations.cpp.i
+camera/hikvision/tool/src/calibration/cameraCalibration.i: camera/hikvision/tool/src/calibration/cameraCalibration.cpp.i
 
-.PHONY : camera/hikvision/tool/src/calibration/calibrations.i
+.PHONY : camera/hikvision/tool/src/calibration/cameraCalibration.i
 
 # target to preprocess a source file
-camera/hikvision/tool/src/calibration/calibrations.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/camera/hikvision/tool/src/calibration/calibrations.cpp.i
-.PHONY : camera/hikvision/tool/src/calibration/calibrations.cpp.i
+camera/hikvision/tool/src/calibration/cameraCalibration.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/camera/hikvision/tool/src/calibration/cameraCalibration.cpp.i
+.PHONY : camera/hikvision/tool/src/calibration/cameraCalibration.cpp.i
 
-camera/hikvision/tool/src/calibration/calibrations.s: camera/hikvision/tool/src/calibration/calibrations.cpp.s
+camera/hikvision/tool/src/calibration/cameraCalibration.s: camera/hikvision/tool/src/calibration/cameraCalibration.cpp.s
 
-.PHONY : camera/hikvision/tool/src/calibration/calibrations.s
+.PHONY : camera/hikvision/tool/src/calibration/cameraCalibration.s
 
 # target to generate assembly for a file
-camera/hikvision/tool/src/calibration/calibrations.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/camera/hikvision/tool/src/calibration/calibrations.cpp.s
-.PHONY : camera/hikvision/tool/src/calibration/calibrations.cpp.s
+camera/hikvision/tool/src/calibration/cameraCalibration.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/camera/hikvision/tool/src/calibration/cameraCalibration.cpp.s
+.PHONY : camera/hikvision/tool/src/calibration/cameraCalibration.cpp.s
 
 camera/hikvision/tool/src/debug/camera_parms_debug.o: camera/hikvision/tool/src/debug/camera_parms_debug.cpp.o
 
@@ -222,6 +222,33 @@ camera/hikvision/tool/src/debug/camera_parms_debug.s: camera/hikvision/tool/src/
 camera/hikvision/tool/src/debug/camera_parms_debug.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/camera/hikvision/tool/src/debug/camera_parms_debug.cpp.s
 .PHONY : camera/hikvision/tool/src/debug/camera_parms_debug.cpp.s
+
+camera/hikvision/tool/src/fileOperation/fileOperation.o: camera/hikvision/tool/src/fileOperation/fileOperation.cpp.o
+
+.PHONY : camera/hikvision/tool/src/fileOperation/fileOperation.o
+
+# target to build an object file
+camera/hikvision/tool/src/fileOperation/fileOperation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/camera/hikvision/tool/src/fileOperation/fileOperation.cpp.o
+.PHONY : camera/hikvision/tool/src/fileOperation/fileOperation.cpp.o
+
+camera/hikvision/tool/src/fileOperation/fileOperation.i: camera/hikvision/tool/src/fileOperation/fileOperation.cpp.i
+
+.PHONY : camera/hikvision/tool/src/fileOperation/fileOperation.i
+
+# target to preprocess a source file
+camera/hikvision/tool/src/fileOperation/fileOperation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/camera/hikvision/tool/src/fileOperation/fileOperation.cpp.i
+.PHONY : camera/hikvision/tool/src/fileOperation/fileOperation.cpp.i
+
+camera/hikvision/tool/src/fileOperation/fileOperation.s: camera/hikvision/tool/src/fileOperation/fileOperation.cpp.s
+
+.PHONY : camera/hikvision/tool/src/fileOperation/fileOperation.s
+
+# target to generate assembly for a file
+camera/hikvision/tool/src/fileOperation/fileOperation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/camera/hikvision/tool/src/fileOperation/fileOperation.cpp.s
+.PHONY : camera/hikvision/tool/src/fileOperation/fileOperation.cpp.s
 
 main.o: main.cpp.o
 
@@ -262,12 +289,15 @@ help:
 	@echo "... camera/hikvision/src/hikvision_camera.o"
 	@echo "... camera/hikvision/src/hikvision_camera.i"
 	@echo "... camera/hikvision/src/hikvision_camera.s"
-	@echo "... camera/hikvision/tool/src/calibration/calibrations.o"
-	@echo "... camera/hikvision/tool/src/calibration/calibrations.i"
-	@echo "... camera/hikvision/tool/src/calibration/calibrations.s"
+	@echo "... camera/hikvision/tool/src/calibration/cameraCalibration.o"
+	@echo "... camera/hikvision/tool/src/calibration/cameraCalibration.i"
+	@echo "... camera/hikvision/tool/src/calibration/cameraCalibration.s"
 	@echo "... camera/hikvision/tool/src/debug/camera_parms_debug.o"
 	@echo "... camera/hikvision/tool/src/debug/camera_parms_debug.i"
 	@echo "... camera/hikvision/tool/src/debug/camera_parms_debug.s"
+	@echo "... camera/hikvision/tool/src/fileOperation/fileOperation.o"
+	@echo "... camera/hikvision/tool/src/fileOperation/fileOperation.i"
+	@echo "... camera/hikvision/tool/src/fileOperation/fileOperation.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

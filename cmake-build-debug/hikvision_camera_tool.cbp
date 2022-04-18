@@ -95,10 +95,13 @@
 		<Unit filename="/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/src/hikvision_camera.cpp">
 			<Option target="run"/>
 		</Unit>
-		<Unit filename="/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/tool/src/calibration/calibrations.cpp">
+		<Unit filename="/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/tool/src/calibration/cameraCalibration.cpp">
 			<Option target="run"/>
 		</Unit>
 		<Unit filename="/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/tool/src/debug/camera_parms_debug.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/tool/src/fileOperation/fileOperation.cpp">
 			<Option target="run"/>
 		</Unit>
 		<Unit filename="/home/tk/Desktop/Hikvision_Camera_Tool/main.cpp">

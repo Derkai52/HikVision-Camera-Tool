@@ -102,18 +102,18 @@ CMakeFiles/run.dir/camera/hikvision/src/hikvision_camera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/camera/hikvision/src/hikvision_camera.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/src/hikvision_camera.cpp -o CMakeFiles/run.dir/camera/hikvision/src/hikvision_camera.cpp.s
 
-CMakeFiles/run.dir/camera/hikvision/tool/src/calibration/calibrations.cpp.o: CMakeFiles/run.dir/flags.make
-CMakeFiles/run.dir/camera/hikvision/tool/src/calibration/calibrations.cpp.o: ../camera/hikvision/tool/src/calibration/calibrations.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tk/Desktop/Hikvision_Camera_Tool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/run.dir/camera/hikvision/tool/src/calibration/calibrations.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/run.dir/camera/hikvision/tool/src/calibration/calibrations.cpp.o -c /home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/tool/src/calibration/calibrations.cpp
+CMakeFiles/run.dir/camera/hikvision/tool/src/calibration/cameraCalibration.cpp.o: CMakeFiles/run.dir/flags.make
+CMakeFiles/run.dir/camera/hikvision/tool/src/calibration/cameraCalibration.cpp.o: ../camera/hikvision/tool/src/calibration/cameraCalibration.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tk/Desktop/Hikvision_Camera_Tool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/run.dir/camera/hikvision/tool/src/calibration/cameraCalibration.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/run.dir/camera/hikvision/tool/src/calibration/cameraCalibration.cpp.o -c /home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/tool/src/calibration/cameraCalibration.cpp
 
-CMakeFiles/run.dir/camera/hikvision/tool/src/calibration/calibrations.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/run.dir/camera/hikvision/tool/src/calibration/calibrations.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/tool/src/calibration/calibrations.cpp > CMakeFiles/run.dir/camera/hikvision/tool/src/calibration/calibrations.cpp.i
+CMakeFiles/run.dir/camera/hikvision/tool/src/calibration/cameraCalibration.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/run.dir/camera/hikvision/tool/src/calibration/cameraCalibration.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/tool/src/calibration/cameraCalibration.cpp > CMakeFiles/run.dir/camera/hikvision/tool/src/calibration/cameraCalibration.cpp.i
 
-CMakeFiles/run.dir/camera/hikvision/tool/src/calibration/calibrations.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/camera/hikvision/tool/src/calibration/calibrations.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/tool/src/calibration/calibrations.cpp -o CMakeFiles/run.dir/camera/hikvision/tool/src/calibration/calibrations.cpp.s
+CMakeFiles/run.dir/camera/hikvision/tool/src/calibration/cameraCalibration.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/camera/hikvision/tool/src/calibration/cameraCalibration.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/tool/src/calibration/cameraCalibration.cpp -o CMakeFiles/run.dir/camera/hikvision/tool/src/calibration/cameraCalibration.cpp.s
 
 CMakeFiles/run.dir/camera/hikvision/tool/src/debug/camera_parms_debug.cpp.o: CMakeFiles/run.dir/flags.make
 CMakeFiles/run.dir/camera/hikvision/tool/src/debug/camera_parms_debug.cpp.o: ../camera/hikvision/tool/src/debug/camera_parms_debug.cpp
@@ -128,20 +128,35 @@ CMakeFiles/run.dir/camera/hikvision/tool/src/debug/camera_parms_debug.cpp.s: cma
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/camera/hikvision/tool/src/debug/camera_parms_debug.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/tool/src/debug/camera_parms_debug.cpp -o CMakeFiles/run.dir/camera/hikvision/tool/src/debug/camera_parms_debug.cpp.s
 
+CMakeFiles/run.dir/camera/hikvision/tool/src/fileOperation/fileOperation.cpp.o: CMakeFiles/run.dir/flags.make
+CMakeFiles/run.dir/camera/hikvision/tool/src/fileOperation/fileOperation.cpp.o: ../camera/hikvision/tool/src/fileOperation/fileOperation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tk/Desktop/Hikvision_Camera_Tool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/run.dir/camera/hikvision/tool/src/fileOperation/fileOperation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/run.dir/camera/hikvision/tool/src/fileOperation/fileOperation.cpp.o -c /home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/tool/src/fileOperation/fileOperation.cpp
+
+CMakeFiles/run.dir/camera/hikvision/tool/src/fileOperation/fileOperation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/run.dir/camera/hikvision/tool/src/fileOperation/fileOperation.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/tool/src/fileOperation/fileOperation.cpp > CMakeFiles/run.dir/camera/hikvision/tool/src/fileOperation/fileOperation.cpp.i
+
+CMakeFiles/run.dir/camera/hikvision/tool/src/fileOperation/fileOperation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/camera/hikvision/tool/src/fileOperation/fileOperation.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/tool/src/fileOperation/fileOperation.cpp -o CMakeFiles/run.dir/camera/hikvision/tool/src/fileOperation/fileOperation.cpp.s
+
 # Object files for target run
 run_OBJECTS = \
 "CMakeFiles/run.dir/main.cpp.o" \
 "CMakeFiles/run.dir/camera/hikvision/src/hikvision_camera.cpp.o" \
-"CMakeFiles/run.dir/camera/hikvision/tool/src/calibration/calibrations.cpp.o" \
-"CMakeFiles/run.dir/camera/hikvision/tool/src/debug/camera_parms_debug.cpp.o"
+"CMakeFiles/run.dir/camera/hikvision/tool/src/calibration/cameraCalibration.cpp.o" \
+"CMakeFiles/run.dir/camera/hikvision/tool/src/debug/camera_parms_debug.cpp.o" \
+"CMakeFiles/run.dir/camera/hikvision/tool/src/fileOperation/fileOperation.cpp.o"
 
 # External object files for target run
 run_EXTERNAL_OBJECTS =
 
 run: CMakeFiles/run.dir/main.cpp.o
 run: CMakeFiles/run.dir/camera/hikvision/src/hikvision_camera.cpp.o
-run: CMakeFiles/run.dir/camera/hikvision/tool/src/calibration/calibrations.cpp.o
+run: CMakeFiles/run.dir/camera/hikvision/tool/src/calibration/cameraCalibration.cpp.o
 run: CMakeFiles/run.dir/camera/hikvision/tool/src/debug/camera_parms_debug.cpp.o
+run: CMakeFiles/run.dir/camera/hikvision/tool/src/fileOperation/fileOperation.cpp.o
 run: CMakeFiles/run.dir/build.make
 run: /usr/local/lib/libopencv_gapi.so.4.1.2
 run: /usr/local/lib/libopencv_stitching.so.4.1.2
@@ -194,7 +209,7 @@ run: /usr/local/lib/libopencv_photo.so.4.1.2
 run: /usr/local/lib/libopencv_imgproc.so.4.1.2
 run: /usr/local/lib/libopencv_core.so.4.1.2
 run: CMakeFiles/run.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tk/Desktop/Hikvision_Camera_Tool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable run"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tk/Desktop/Hikvision_Camera_Tool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable run"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/run.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
