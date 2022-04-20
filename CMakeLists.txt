@@ -40,5 +40,9 @@ TARGET_LINK_LIBRARIES(${BIN_NAME} ${YAML_CPP_LIBRARIES})
 
 
 # 设置配置文件夹的绝对路径
-set(HIK_CONFIG_FILE_PATH ${PROJECT_SOURCE_DIR}/camera/hikvision/config) # 设置配置目录路径
+set(HIK_CONFIG_FILE_PATH ${PROJECT_SOURCE_DIR}/camera/hikvision/config) # 设置相机配置目录路径
 target_compile_definitions(${BIN_NAME} PRIVATE "HIK_CONFIG_FILE_PATH=\"${HIK_CONFIG_FILE_PATH}\"")
+
+# 设置相机标定相关的配置文件路径
+set(HIK_CALI_FILE_PATH ${PROJECT_SOURCE_DIR}/camera/hikvision/config/cameraCaliData)
+target_compile_definitions(${BIN_NAME} PRIVATE "HIK_CALI_FILE_PATH=\"${HIK_CALI_FILE_PATH}\"")

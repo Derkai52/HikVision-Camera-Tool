@@ -516,6 +516,10 @@ CMakeFiles/run.dir/main.cpp.o: ../camera/hikvision/include/MvCameraControl.h
 CMakeFiles/run.dir/main.cpp.o: ../camera/hikvision/include/MvErrorDefine.h
 CMakeFiles/run.dir/main.cpp.o: ../camera/hikvision/include/PixelType.h
 CMakeFiles/run.dir/main.cpp.o: ../camera/hikvision/include/hikvision_camera.h
+CMakeFiles/run.dir/main.cpp.o: ../camera/hikvision/tool/include/CAMERA_LOG.h
+CMakeFiles/run.dir/main.cpp.o: ../camera/hikvision/tool/include/calibration/cameraCalibration.h
+CMakeFiles/run.dir/main.cpp.o: ../camera/hikvision/tool/include/fileOperation/fileOperation.h
+CMakeFiles/run.dir/main.cpp.o: ../camera/hikvision/tool/include/systemChoose.h
 CMakeFiles/run.dir/main.cpp.o: ../main.cpp
 CMakeFiles/run.dir/main.cpp.o: /usr/local/include/opencv4/opencv2/calib3d.hpp
 CMakeFiles/run.dir/main.cpp.o: /usr/local/include/opencv4/opencv2/core.hpp

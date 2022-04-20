@@ -352,7 +352,7 @@ bool CCalibration::cameraCali() {
     //标定图像素偏差参数文件名
     std::string caliBiasDataName = CALI_BIAS_DATA_NAME;
     //标定棋盘图像的行列数
-    cv::Size boardSize = cv::Size(11, 8);
+    cv::Size boardSize = cv::Size(6, 4);
     //摄像头标定类初始化
     CCalibration calibration(patternImgPath, calibResultPath, caliCameraDataName, caliBiasDataName, boardSize);
     //开始摄像头标定

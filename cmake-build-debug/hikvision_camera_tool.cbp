@@ -45,6 +45,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DHIK_CONFIG_FILE_PATH=&quot;/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/config&quot;"/>
+					<Add option="-DHIK_CALI_FILE_PATH=&quot;/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/config/cameraCaliData&quot;"/>
 					<Add directory="/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/include"/>
 					<Add directory="/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/tool/include"/>
 					<Add directory="/usr/local/include/opencv4"/>
@@ -72,6 +73,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DHIK_CONFIG_FILE_PATH=&quot;/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/config&quot;"/>
+					<Add option="-DHIK_CALI_FILE_PATH=&quot;/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/config/cameraCaliData&quot;"/>
 					<Add directory="/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/include"/>
 					<Add directory="/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/tool/include"/>
 					<Add directory="/usr/local/include/opencv4"/>

@@ -11,31 +11,36 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="056420fb-1b2a-4653-964d-1c1c21f78869" name="默认变更列表" comment="fix：fix bug">
-      <change afterPath="$PROJECT_DIR$/camera/hikvision/tool/include/CAMERA_LOG.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/camera/hikvision/tool/include/calibration/cameraCalibration.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/camera/hikvision/tool/include/fileOperation/fileOperation.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/camera/hikvision/tool/include/systemChoose.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/camera/hikvision/tool/src/calibration/cameraCalibration.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/camera/hikvision/tool/src/fileOperation/fileOperation.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="056420fb-1b2a-4653-964d-1c1c21f78869" name="默认变更列表" comment="new: &#10;1、相机标定示例&#10;2、日志系统&#10;3、系统选择">
+      <change afterPath="$PROJECT_DIR$/camera/hikvision/config/cameraCaliData/caliPattern/0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/camera/hikvision/config/cameraCaliData/caliPattern/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/camera/hikvision/config/cameraCaliData/caliPattern/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/camera/hikvision/config/cameraCaliData/caliPattern/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/camera/hikvision/config/cameraCaliData/caliPattern/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/camera/hikvision/config/cameraCaliData/caliPattern/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/camera/hikvision/config/cameraCaliData/caliPattern/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/camera/hikvision/config/cameraCaliData/caliPattern/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/camera/hikvision/config/cameraCaliData/caliPattern/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/camera/hikvision/config/cameraCaliData/caliPattern/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/camera/hikvision/config/cameraCaliData/caliPattern/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/camera/hikvision/tool/src/calibration/标定棋盘图.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/camera/hikvision/tool/src/calibration/相机标定模块使用说明.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/camera/hikvision/tool/include/calibration/calibrations.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/camera/hikvision/tool/src/calibration/calibrations.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera/hikvision/tool/include/calibration/cameraCalibration.h" beforeDir="false" afterPath="$PROJECT_DIR$/camera/hikvision/tool/include/calibration/cameraCalibration.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera/hikvision/tool/src/calibration/cameraCalibration.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/camera/hikvision/tool/src/calibration/cameraCalibration.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.19.2/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.19.2/CMakeSystem.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/camera/hikvision/src/hikvision_camera.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/camera/hikvision/src/hikvision_camera.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/run.dir/flags.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/hikvision_camera_tool.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/hikvision_camera_tool.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/run" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/run" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/run" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/CMakeLists.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../cv/rm2021_cidp_vision-master/123/CIDP-RMCV-2022/LICENSE" beforeDir="false" />
@@ -226,16 +231,16 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="cmake.loaded.for.project" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/camera/hikvision/tool/include" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/camera/hikvision/tool/src/calibration" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/camera/hikvision/tool/src/calibration" />
+      <recent name="$PROJECT_DIR$/camera/hikvision/config/cameraCaliData/caliPattern" />
+      <recent name="$PROJECT_DIR$/camera/hikvision/config" />
       <recent name="$PROJECT_DIR$/camera/hikvision/tool/include" />
       <recent name="$PROJECT_DIR$/camera/hikvision/tool/include/log" />
-      <recent name="$PROJECT_DIR$/camera/hikvision/tool/src/fileOperation" />
-      <recent name="$PROJECT_DIR$/camera/hikvision/tool/include/fileOperation" />
-      <recent name="$PROJECT_DIR$/camera/hikvision/tool/include/calibration" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/camera/hikvision/tool/include" />
@@ -246,12 +251,12 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="run" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="hikvision_camera_tool" TARGET_NAME="run" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="hikvision_camera_tool" RUN_TARGET_NAME="run">
+    <configuration name="run" type="CMakeRunConfiguration" factoryName="Application" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="hikvision_camera_tool" TARGET_NAME="run" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="hikvision_camera_tool" RUN_TARGET_NAME="run">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -261,6 +266,11 @@
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="CMake 应用程序.run" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -286,7 +296,10 @@
       <workItem from="1649859724167" duration="2586000" />
       <workItem from="1650007687161" duration="29000" />
       <workItem from="1650007749387" duration="69000" />
-      <workItem from="1650298510338" duration="2056000" />
+      <workItem from="1650298510338" duration="2274000" />
+      <workItem from="1650360409913" duration="1242000" />
+      <workItem from="1650434824273" duration="3775000" />
+      <workItem from="1650439416832" duration="3467000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1648174399072</created>
@@ -372,7 +385,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649859972786</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="new: &#10;1、相机标定示例&#10;2、日志系统&#10;3、系统选择">
+      <created>1650300762239</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1650300762239</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,6 +415,7 @@
     <MESSAGE value="update： 重新整理了类" />
     <MESSAGE value="update： update readme" />
     <MESSAGE value="fix：fix bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix：fix bug" />
+    <MESSAGE value="new: &#10;1、相机标定示例&#10;2、日志系统&#10;3、系统选择" />
+    <option name="LAST_COMMIT_MESSAGE" value="new: &#10;1、相机标定示例&#10;2、日志系统&#10;3、系统选择" />
   </component>
 </project>

@@ -7,20 +7,20 @@
 #include "opencv2/opencv.hpp"
 
 
-#define PATTERN_IMG_PATH            "../visionData/cameraCaliData/caliPattern/"            //标定图存储的地址
-#define CALI_RESULTS_PATH            "../visionData/cameraCaliData/caliResults/"            //标定相机参数文件存储的地址
-#define REPAIR_IMG_PATH                "../visionData/cameraCaliData/caliRepairImg/"    //需校正图存储的地址
+#define PATTERN_IMG_PATH            HIK_CALI_FILE_PATH"/caliPattern/"      //标定图存储的地址
+#define CALI_RESULTS_PATH           HIK_CALI_FILE_PATH"/caliResults/"      //标定相机参数文件存储的地址
+#define REPAIR_IMG_PATH             HIK_CALI_FILE_PATH"/caliRepairImg/"    //需校正图存储的地址
 
 
-#define REPAIR_IMG_NAME                "0.jpg"
+#define REPAIR_IMG_NAME               "0.jpg"
 #define REPAIR_FINISH_IMG_NAME        "1.jpg"
 
 #define CALI_CAMERA_DATA_NAME    "calibCameraData.yml"        //标定相机参数文件名
-#define CALI_BIAS_DATA_NAME        "caliBiasData.txt"        //标定图像素偏差参数文件名
+#define CALI_BIAS_DATA_NAME      "caliBiasData.txt"           //标定图像素偏差参数文件名
 
 
 struct CameraCalibrationStruct {
-    float fx, fy, u0, v0;                //相机内参信息
+    float fx, fy, u0, v0;                 //相机内参信息
     float k_1, k_2, p_1, p_2, k_3;        //相机畸变系数矩阵
     CameraCalibrationStruct() {
         fx = 1741.0f;

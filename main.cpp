@@ -1,15 +1,17 @@
 #include <iostream>
 #include "opencv2/opencv.hpp"
 #include "hikvision_camera.h"
+#include "calibration/cameraCalibration.h"
 
 using namespace std;
 using namespace cv;
 using namespace camera;
 
-HikCamera MVS_cap;
+HikCamera MVS_cap; // 创建了一个相机对象
 
 int main() {
     Mat src;
+//  CCalibration::cameraCali(); // 相机标定示例
     MVS_cap.Init();        // 初始化相机
     MVS_cap.CamInfoShow(); // 显示图像参数信息
     while (true) {
