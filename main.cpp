@@ -19,7 +19,8 @@ int main() {
         if (src.empty()) { // 相机开启线程需要一定时间
             continue;
         }
-        cv::imshow("HikCamera_GetImage", src);
+        MVS_cap.undistProcess(src);
+//        cv::imshow("HikCamera_GetImage", src);
         cv::waitKey(1);
     }
     return 0;

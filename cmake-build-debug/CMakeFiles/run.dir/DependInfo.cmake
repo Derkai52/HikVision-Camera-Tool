@@ -16,6 +16,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_TARGET_DEFINITIONS_CXX
   "HIK_CALI_FILE_PATH=\"/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/config/cameraCaliData\""
   "HIK_CONFIG_FILE_PATH=\"/home/tk/Desktop/Hikvision_Camera_Tool/camera/hikvision/config\""
+  "PROJECT_DIR=\"/home/tk/Desktop/Hikvision_Camera_Tool\""
   )
 
 # The include file search paths:

@@ -38,6 +38,7 @@ namespace camera
     };
 
 
+
     //^ ********************************** 海康相机类 ************************************ //
     class HikCamera
     {
@@ -61,13 +62,35 @@ namespace camera
         void ReadImg(cv::Mat &image);
         //********** 对相机调参并实时查看效果 *******/
         static void DebugCam(void *p_handle, MV_CC_DEVICE_INFO *pDeviceInfo);
-
+        //********** 相机畸变矫正 *****************/
+        bool undistProcess(cv::Mat src);
+        bool readParams();
+        struct CameraCalibrationStruct {
+            float fx, fy, u0, v0;                 // 相机内参矩阵
+            float k_1, k_2, p_1, p_2, k_3;        // 相机畸变矩阵
+            CameraCalibrationStruct() {
+                fx = 1.8133723144531250e+03f;
+                fy = 1.8104567871093750e+03f;
+                u0 = 7.2068243408203125e+02f;
+                v0 = 5.5575854492187500e+02f;
+                k_1 = -1.0287012904882431e-01f;
+                k_2 = 4.7102910280227661e-01f;
+                p_1 = -1.7599905550014228e-04f;
+                p_2 = -2.8243704582564533e-04f;
+                k_3 = -1.1573969125747681e+00f;
+            }
+        };
+        CameraCalibrationStruct readCalibrationData(const std::string &filename);
 
 
     private:
         void *handle;            // 相机操作句柄
         std::string config_yaml; // 相机参数配置文件路径
         pthread_t nThreadID;     // 相机工作线程
+        //********** 相机数据 **************/
+        cv::Mat K = cv::Mat::eye(cv::Size(3, 3), CV_32FC1);
+        cv::Mat R;
+        cv::Mat discoeff = cv::Mat::eye(cv::Size(1, 5), CV_32FC1);
 
         //********** 海康相机参数表(同上) **************/
         int nRet;
@@ -76,7 +99,7 @@ namespace camera
         int Offset_x;
         int Offset_y;
         bool FrameRateEnable;
-        int FrameRate;
+        float FrameRate;
         int BurstFrameCount;
 
         int ExposureMode;

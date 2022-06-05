@@ -30,11 +30,11 @@ namespace camera {
             width = config_file["width"].as<int>();
             height = config_file["height"].as<int>();
             FrameRateEnable = config_file["FrameRateEnable"].as<bool>();
-            FrameRate = config_file["FrameRate"].as<int>();
+            FrameRate = config_file["FrameRate"].as<float>();
             BurstFrameCount = config_file["BurstFrameCount"].as<int>();
             ExposureMode = config_file["ExposureMode"].as<int>();
             ExposureTime = config_file["ExposureTime"].as<int>();
-            GammaEnable = config_file["FrameRateEnable"].as<bool>();
+            GammaEnable = config_file["GammaEnable"].as<bool>();
             Gamma = config_file["Gamma"].as<float>();
             GainAuto = config_file["GainAuto"].as<int>();
             Gain = config_file["Gain"].as<float>();
@@ -574,5 +574,81 @@ namespace camera {
         free(m_pBufForDriver);
         free(m_pBufForSaveImage);
         return 0;
+    }
+
+    //^ ********************************* 相机畸变矫正 ************************************ //
+    bool HikCamera::undistProcess(Mat srcImg) {
+        bool readSuccess = readParams();
+        if (!readSuccess) {
+            cout << "read Params Failed!" << endl;
+        }
+        //***************畸变校正****************//
+        R = cv::Mat::eye(cv::Size(3, 3), CV_32FC1);
+        cv::Mat mapx, mapy;
+//        cv::Mat srcImg = cv::imread(srcImgPath);
+        cv::Mat dstImg;
+
+        if (srcImg.empty()) {
+            cout << "can not load repair image!" << endl;
+            return false;
+        }
+        cv::initUndistortRectifyMap(K, discoeff, R, K, srcImg.size(), CV_32FC1, mapx, mapy);
+
+        cv::remap(srcImg, dstImg, mapx, mapy, cv::INTER_LINEAR);
+//        cv::resize(dstImg, dstImg, cv::Size(), 0.25, 0.25, cv::INTER_LINEAR);
+        cv::namedWindow("Repair", 1);
+        cv::imshow("Repair", dstImg);
+        cv::imshow("Origin", srcImg);
+//        cv::imwrite(dstImgPath, dstImg);
+        cv::waitKey(1);
+        return true;
+    }
+
+    HikCamera::CameraCalibrationStruct HikCamera::readCalibrationData(const std::string &filename) {
+        cv::FileStorage fs(filename, cv::FileStorage::READ);
+        if (!fs.isOpened()) {
+            cout << "Can not read camera calibration data in " << filename << ",use default param!" << endl;
+            return CameraCalibrationStruct();
+        } else {
+            cout << "Read camera calibration data success in " << filename << endl;
+            try {
+                CameraCalibrationStruct calibrationStruct;
+                fs["IntrinsicParameters_fx"] >> calibrationStruct.fx;
+                fs["IntrinsicParameters_fy"] >> calibrationStruct.fy;
+                fs["IntrinsicParameters_u0"] >> calibrationStruct.u0;
+                fs["IntrinsicParameters_v0"] >> calibrationStruct.v0;
+                fs["DistortionFactor_k1"] >> calibrationStruct.k_1;
+                fs["DistortionFactor_k2"] >> calibrationStruct.k_2;
+                fs["DistortionFactor_k3"] >> calibrationStruct.k_3;
+                fs["DistortionFactor_p1"] >> calibrationStruct.p_1;
+                fs["DistortionFactor_p2"] >> calibrationStruct.p_2;
+                fs.release();
+                return calibrationStruct;
+            } catch (cv::Exception &e) {
+                fs.release();
+                cout << e.msg.substr(0, e.msg.length() - 1) << endl;
+                cout << "catch exception while reading calibration data! Use default param!" << endl;
+                return CameraCalibrationStruct();
+            }
+        }
+    }
+
+    bool HikCamera::readParams() {
+        CameraCalibrationStruct calibrationData;
+        calibrationData = HikCamera::readCalibrationData(PROJECT_DIR"/camera/hikvision/config/cameraCaliData/caliResults/calibCameraData.yml");
+        cout << " image!" <<calibrationData.fx<< endl;
+        cout << " image!" <<K.at<float>(0, 0)<< endl;
+
+        K.at<float>(0, 0) = calibrationData.fx;
+        K.at<float>(1, 1) = calibrationData.fy;
+        K.at<float>(0, 2) = calibrationData.u0;
+        K.at<float>(1, 2) = calibrationData.v0;
+        discoeff.at<float>(0, 0) = calibrationData.k_1;
+        discoeff.at<float>(1, 0) = calibrationData.k_2;
+        discoeff.at<float>(2, 0) = calibrationData.p_1;
+        discoeff.at<float>(3, 0) = calibrationData.p_2;
+        discoeff.at<float>(4, 0) = calibrationData.k_3;
+
+        return true;
     }
 };

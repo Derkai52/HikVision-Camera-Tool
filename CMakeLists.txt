@@ -11,6 +11,9 @@ SET(BIN_NAME "run")
 SET(HIKVISION_CAMERA_DIR "${PROJECT_SOURCE_DIR}/camera/hikvision") # 设置相机SDK工具包目录
 SET(YAML_CPP_LIBRARIES /usr/local/lib/libyaml-cpp.so) # 设置yaml-cpp库
 
+add_compile_definitions(PROJECT_DIR="${PROJECT_SOURCE_DIR}")
+
+
 FIND_PROGRAM(CCACHE_FOUND ccache) # ccache编译器缓存
 IF(CCACHE_FOUND)
     SET_PROPERTY(GLOBAL PROPERTY RULE_LAUNCH_COMPILE ccache)

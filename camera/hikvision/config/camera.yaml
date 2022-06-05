@@ -3,11 +3,11 @@ height: 1080
 Offset_x: 0
 Offset_y: 0
 FrameRateEnable: false
-FrameRate: 100
+FrameRate: 100.0
 BurstFrameCount: 1
 ExposureMode: 0
 ExposureTime: 5000
-GammaEnable: false
+GammaEnable: true
 Gamma: 0.7
 GainAuto: 2
 Gain: 15
