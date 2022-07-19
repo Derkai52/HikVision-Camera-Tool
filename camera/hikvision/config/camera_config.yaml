@@ -10,7 +10,7 @@ ExposureTime: 5000
 GammaEnable: true
 Gamma: 0.7
 GainAuto: 2
-Gain: 15
+Gain: 15.0
 SaturationEnable: false
 Saturation: 128
 BalanceWhiteMode: 0

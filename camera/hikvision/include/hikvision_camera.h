@@ -37,17 +37,14 @@ namespace camera
 
     };
 
-
-
     //^ ********************************** 海康相机类 ************************************ //
     class HikCamera
     {
     public:
-
         ~HikCamera();
 
         //*********** 相机初始化 ******************/
-        void Init();
+        void Init(bool debug_flag, const std::string &config_path, const std::string &intrinsic_para_file_path, std::chrono::_V2::steady_clock::time_point time_start);
         //********** 相机工作线程 ******************/
         static void *HKWorkThread(void *arg);
         //********** 输出设备信息 ******************/
@@ -68,7 +65,7 @@ namespace camera
         struct CameraCalibrationStruct {
             float fx, fy, u0, v0;                 // 相机内参矩阵
             float k_1, k_2, p_1, p_2, k_3;        // 相机畸变矩阵
-            CameraCalibrationStruct() {
+            CameraCalibrationStruct() { // 内参矩阵(缺省值)
                 fx = 1.8133723144531250e+03f;
                 fy = 1.8104567871093750e+03f;
                 u0 = 7.2068243408203125e+02f;
@@ -81,45 +78,50 @@ namespace camera
             }
         };
         CameraCalibrationStruct readCalibrationData(const std::string &filename);
-
+        //********** 相机畸变矫正 *****************/
+        //采集一张图像更新一次时间戳
+        bool UpdateTimestampOffset(std::chrono::_V2::steady_clock::time_point time_start);
+        //读取相机时间戳
+        int Get_TIMESTAMP();
 
     private:
         void *handle;            // 相机操作句柄
-        std::string config_yaml; // 相机参数配置文件路径
+        std::string CameraConfigFilePath; // 相机参数配置文件路径
+        std::string CameraIntrinsicParaFilePath; // 相机内参文件路径
         pthread_t nThreadID;     // 相机工作线程
+        std::chrono::_V2::steady_clock::time_point time_start; // 相机初始化时间戳
+
         //********** 相机数据 **************/
         cv::Mat K = cv::Mat::eye(cv::Size(3, 3), CV_32FC1);
         cv::Mat R;
         cv::Mat discoeff = cv::Mat::eye(cv::Size(1, 5), CV_32FC1);
 
-        //********** 海康相机参数表(同上) **************/
+        //********** 海康相机参数表(缺省值) **************/
         int nRet;
-        int width;
-        int height;
-        int Offset_x;
-        int Offset_y;
-        bool FrameRateEnable;
-        float FrameRate;
-        int BurstFrameCount;
+        int width = 1280;
+        int height = 960;
+        int Offset_x = 0;
+        int Offset_y = 0;
+        bool FrameRateEnable = false;
+        float FrameRate = 100.0;
+        int BurstFrameCount = 1;
 
-        int ExposureMode;
-        int ExposureTime;
-        bool GammaEnable;
-        float Gamma;
-        int GainAuto;
-        float Gain;
-        bool SaturationEnable;
-        int Saturation;
-        int BalanceWhiteMode;
-        int BalanceRatio_Red;
-        int BalanceRatio_Green;
-        int BalanceRatio_Blue;
+        int ExposureMode = 0;
+        int ExposureTime = 5000;
+        bool GammaEnable = true;
+        float Gamma = 0.7;
+        int GainAuto = 2;
+        float Gain = 15.0;
+        bool SaturationEnable = false;
+        int Saturation = 128;
+        int BalanceWhiteMode = 0;
+        int BalanceRatio_Red = 1400;
+        int BalanceRatio_Green = 1000;
+        int BalanceRatio_Blue = 2000;
 
-        int TriggerMode;
-        int TriggerSource;
-        int LineSelector;
-
-
+        int TriggerMode = 1;
+        int TriggerSource = 99;
+        int LineSelector = 99;
     };
 
 } // namespace camera

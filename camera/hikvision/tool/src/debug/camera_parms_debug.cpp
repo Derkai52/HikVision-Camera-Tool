@@ -12,59 +12,34 @@ int balanceRatioGreen_slider = 1000;
 int balanceRatioBlue_slider = 2000;
 
 
-
 void exposureTrackbar(int, void *p_handle) {
-    int nRet = 0;
-    nRet = MV_CC_SetExposureTime(p_handle, exposureTime_slider);
-    if (MV_OK != nRet) {
-        printf("Set ExposureTime fail! nRet [0x%x] 或检查曝光模式\n", nRet);
-    }
+    MV_CC_SetExposureTime(p_handle, exposureTime_slider);
 }
 
 void gainTrackbar(int, void *p_handle) {
-    int nRet = 0;
-    nRet = MV_CC_SetGain(p_handle, gain_slider);
-    if (MV_OK != nRet) {
-        printf("Set Gain fail! nRet [0x%x] 或检查Gain模式\n", nRet);
-    }
+    MV_CC_SetGain(p_handle, gain_slider);
 }
 
 void gammasTrackbar(int, void *p_handle) {
-    int nRet = 0;
-    nRet = MV_CC_SetGamma(p_handle, ((double) gammas_slider / 1000));
-    if (MV_OK != nRet) {
-        printf("Set Gammas fail! nRet [0x%x] 或检查Gamma模式\n", nRet);
-    }
+    MV_CC_SetGamma(p_handle, ((double) gammas_slider / 1000));
 }
 
 void balanceRatioRedTrackbar(int, void *p_handle) {
-    int nRet = 0;
-    nRet = MV_CC_SetBalanceRatioRed(p_handle, balanceRatioRed_slider);
-    if (MV_OK != nRet) {
-        printf("Set BalanceRatioRed fail! nRet [0x%x] 或检查白平衡模式\n", nRet);
-    }
+    MV_CC_SetBalanceRatioRed(p_handle, balanceRatioRed_slider);
 }
 
 void balanceRatioGreenTrackbar(int, void *p_handle) {
-    int nRet = 0;
-    nRet = MV_CC_SetBalanceRatioGreen(p_handle, balanceRatioGreen_slider);
-    if (MV_OK != nRet) {
-        printf("Set BalanceRatioGreen fail! nRet [0x%x] 或检查白平衡模式\n", nRet);
-    }
+    MV_CC_SetBalanceRatioGreen(p_handle, balanceRatioGreen_slider);
 }
 
 void balanceRatioBlueTrackbar(int, void *p_handle) {
-    int nRet = 0;
-    nRet = MV_CC_SetBalanceRatioBlue(p_handle, balanceRatioBlue_slider);
-    if (MV_OK != nRet) {
-        printf("Set balanceRatioBlue fail! nRet [0x%x] 或检查白平衡模式\n", nRet);
-    }
+    MV_CC_SetBalanceRatioBlue(p_handle, balanceRatioBlue_slider);
 }
 
 
 void debugcam(void *p_handle, MV_CC_DEVICE_INFO *pDeviceInfo) {
     string window_name = "Debug-Tool"; // 输入窗口名即可附加在窗口上，若无同名窗口则新建该窗口
-    namedWindow(window_name); // warning: 关闭窗口后将不再显示滑动条
+    namedWindow(window_name); // TODO: warning: 关闭窗口后将不再显示滑动条
     resizeWindow(window_name, 500, 500);
 
     char TrackbarName[50];
@@ -76,7 +51,7 @@ void debugcam(void *p_handle, MV_CC_DEVICE_INFO *pDeviceInfo) {
     const int balanceRatioBlue_slider_max = 3000; // 限制正常使用范围限制(0~3000)  bug:需要加一个自动白平衡选项
 
 
-    // BUG:暂因SDK原因无法获得【海康设备获取硬件参数值有效范围】。所以针对不同设备预设置不同参数。详情请参照海康官网设备信息。
+    // TODO: BUG:暂因SDK原因无法获得【海康设备获取硬件参数值有效范围】。所以针对不同设备预设置不同参数。详情请参照海康官网设备信息。
     // 新设备请在下面添加即可。下面仅为基本参数，可根据实际情况添加
     // Warning: 建议更改。此处是强行进行了转换后的比较。(原先是unsigned char* 和 const char*)
     if (!strcmp(reinterpret_cast<const char *>(pDeviceInfo->SpecialInfo.stUsb3VInfo.chModelName),"MV-CA016-10UC")) {

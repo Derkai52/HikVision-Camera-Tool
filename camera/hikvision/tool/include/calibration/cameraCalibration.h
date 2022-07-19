@@ -1,7 +1,6 @@
 #ifndef HIKVISION_CAMERA_TOOL_CAMERACALIBRATION_H
 #define HIKVISION_CAMERA_TOOL_CAMERACALIBRATION_H
 
-//#include "tool/Conf.h"
 #include "fileOperation/fileOperation.h"
 #include "iostream"
 #include "opencv2/opencv.hpp"
@@ -22,7 +21,7 @@
 struct CameraCalibrationStruct {
     float fx, fy, u0, v0;                 //相机内参信息
     float k_1, k_2, p_1, p_2, k_3;        //相机畸变系数矩阵
-    CameraCalibrationStruct() {
+    CameraCalibrationStruct() {  // 相机内参缺省值
         fx = 1.8133723144531250e+03f;
         fy = 1.8104567871093750e+03f;
         u0 = 7.2068243408203125e+02f;

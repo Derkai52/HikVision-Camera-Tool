@@ -11,21 +11,25 @@ namespace camera {
     cv::Mat frame;                   // 获得的Mat类型图像
     bool frame_empty = 0;            // 空图像数
     pthread_mutex_t mutex;           // 互斥锁
+    int timestamp_offset = 0;        // 触发时间戳偏移量
     struct HKWorkParam {             // 常用信息结构体
         void *handle;
         MV_CC_DEVICE_INFO *pDeviceInfo;
     };
 
     //^ ********************************** 相机初始化 ************************************ //
-    void HikCamera::Init() {
+    void HikCamera::Init(bool debug_flag, const std::string &config_file_path, const std::string &intrinsic_para_file_path, std::chrono::_V2::steady_clock::time_point timeStart) {
         handle = NULL;
-        config_yaml = HIK_CONFIG_FILE_PATH"/camera.yaml";
-        YAML::Node config_file;
-        bool DEBUG_FLAG = true; // 相机参数实时调试模式标识符
+        CameraConfigFilePath = config_file_path; // 相机参数文件路径
+        CameraIntrinsicParaFilePath = intrinsic_para_file_path; // 相机内参文件路径
+        time_start = timeStart; // 相机初始化时间戳
 
-        //*************** 1、读取待设置的摄像头参数默认值 *******************/
+        YAML::Node config_file;
+        bool DEBUG_FLAG = debug_flag; // 相机参数实时调试模式标识符
+
+        //*************** 1、读取待设置的相机参数默认值 *******************/
         try {
-            config_file = YAML::LoadFile(config_yaml);
+            config_file = YAML::LoadFile(CameraConfigFilePath);
             // yaml文件给出时配置生效
             width = config_file["width"].as<int>();
             height = config_file["height"].as<int>();
@@ -38,7 +42,7 @@ namespace camera {
             Gamma = config_file["Gamma"].as<float>();
             GainAuto = config_file["GainAuto"].as<int>();
             Gain = config_file["Gain"].as<float>();
-            SaturationEnable = config_file["FrameRateEnable"].as<bool>();
+            SaturationEnable = config_file["SaturationEnable"].as<bool>();
             Saturation = config_file["Saturation"].as<int>();
             BalanceWhiteMode = config_file["BalanceWhiteMode"].as<int>();
             BalanceRatio_Red = config_file["BalanceRatio_Red"].as<int>();
@@ -49,14 +53,14 @@ namespace camera {
             TriggerMode = config_file["TriggerMode"].as<int>();
             TriggerSource = config_file["TriggerSource"].as<int>();
             LineSelector = config_file["LineSelector"].as<int>();
-            ofstream yaml_file(config_yaml);
-            config_file["LineSelector"] = 99;
-            config_file["TriggerSource"] = 99;
-            yaml_file << config_file;
-            yaml_file.close();
+//            ofstream yaml_file(CameraConfigFilePath);
+//            config_file["LineSelector"] = 99;
+//            config_file["TriggerSource"] = 99;
+//            yaml_file << config_file;
+//            yaml_file.close();
         }
         catch(exception &e){
-            std::cout << e.what() << "\n载入配置文件失败，将启用默认参数!\n" << std::endl;
+            std::cout << "\n载入相机配置文件失败, 将启用默认参数!  "<< e.what() <<"\n"<< std::endl;
         }
 
         //****************** 2、枚举设备 **************************/
@@ -505,6 +509,7 @@ namespace camera {
         if (frame_empty) {
             image = cv::Mat();
         } else {
+            UpdateTimestampOffset(time_start); // 更新一次触发时间戳
             image = camera::frame.clone();
             frame_empty = 1;
         }
@@ -610,7 +615,7 @@ namespace camera {
             cout << "Can not read camera calibration data in " << filename << ",use default param!" << endl;
             return CameraCalibrationStruct();
         } else {
-            cout << "Read camera calibration data success in " << filename << endl;
+//            cout << "Read camera calibration data success in " << filename << endl;
             try {
                 CameraCalibrationStruct calibrationStruct;
                 fs["IntrinsicParameters_fx"] >> calibrationStruct.fx;
@@ -633,11 +638,28 @@ namespace camera {
         }
     }
 
+    //^ ********************************* 相机触发时间戳 ************************************ //
+    //采集一张图像更新一次时间戳
+    bool HikCamera::UpdateTimestampOffset(std::chrono::_V2::steady_clock::time_point qtime_start)
+    {   //计算时间戳偏移
+        std::chrono::_V2::steady_clock::time_point time_end = std::chrono::_V2::steady_clock::now();
+        std::chrono::duration<double> time_span = time_end - qtime_start;
+        timestamp_offset = time_span.count() * 1000;
+        return true;
+    }
+
+    //读取相机时间戳
+    int HikCamera::Get_TIMESTAMP()
+    {   //获取时间戳
+//        std::chrono::_V2::steady_clock::time_point time_start = std::chrono::_V2::steady_clock::now();
+//        return ((int)time_start.time_since_epoch().count() - timestamp_offset);
+        return timestamp_offset;
+    }
+
+
     bool HikCamera::readParams() {
         CameraCalibrationStruct calibrationData;
-        calibrationData = HikCamera::readCalibrationData(PROJECT_DIR"/camera/hikvision/config/cameraCaliData/caliResults/calibCameraData.yml");
-        cout << " image!" <<calibrationData.fx<< endl;
-        cout << " image!" <<K.at<float>(0, 0)<< endl;
+        calibrationData = HikCamera::readCalibrationData(CameraIntrinsicParaFilePath);
 
         K.at<float>(0, 0) = calibrationData.fx;
         K.at<float>(1, 1) = calibrationData.fy;
