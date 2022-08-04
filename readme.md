@@ -10,8 +10,12 @@
 > * MV-CA016-10UC
 
 ### 环境依赖
+* 海康工业相机SDK
 * OpenCV 3.5及其以上
 * yaml-cpp
+> cd /opt && git clone https://github.com/jbeder/yaml-cpp.git
+> cd yaml-cpp && mkdir build && cd build && cmake -DBUILD_SHARED_LIBS=ON ..
+> make && sudo make install
 
 ## 已实现的功能：
 * 采集图像、数据显示、触发时间戳记录等基础功能
