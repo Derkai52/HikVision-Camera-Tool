@@ -14,7 +14,9 @@
 * OpenCV 3.5及其以上
 * yaml-cpp
 > cd /opt && git clone https://github.com/jbeder/yaml-cpp.git
+> 
 > cd yaml-cpp && mkdir build && cd build && cmake -DBUILD_SHARED_LIBS=ON ..
+> 
 > make && sudo make install
 
 ## 已实现的功能：
