@@ -16,7 +16,7 @@ int main() {
     //    CCalibration::cameraCali(); // 相机标定示例(取消注释即可使用)
     auto time_start = std::chrono::steady_clock::now(); // 记录相机初始化时间戳
 
-    MVS_cap.Init(true, camera_config_path, intrinsic_para_path, time_start);  // 初始化相机
+    MVS_cap.Init(true, camera_config_path, intrinsic_para_path, time_start);  // 初始化相机，第一个参数为 动态调节相机参数模式
     MVS_cap.CamInfoShow(); // 显示图像参数信息
     while (true) {
         MVS_cap.ReadImg(src); // 相机取图
